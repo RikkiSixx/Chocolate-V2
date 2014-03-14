@@ -22,6 +22,9 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 			array( 'main-menu' => __( 'Main Menu', 'chocolate' ) )
 		);
 
+		// Library files
+		require_once( THEME_LIBRARY . '/theme-options.php');
+
 		// Objects
 		add_action( 'init', 'theme_post_types_init' );
 		add_action( 'init', 'theme_taxonomies_init' );
@@ -112,6 +115,31 @@ function theme_post_types_init() {
 			),
 		)
 	);
+
+	/*
+	register_taxonomy(
+		'example',
+		array( 'post' ),
+		array(
+			'public' => true,
+			'hierarchical' => true,
+			'labels' => array(
+				'name' => __( 'Examples', 'seed' ),
+				'singular_name' => __( 'Example', 'seed' ),
+				'search_items' => __( 'Search Examples', 'seed' ),
+				'popular_items' => __( 'Popular Examples', 'seed' ),
+				'all_items' => __( 'All Examples', 'seed' ),
+				'parent_item' => __( 'Parent Example', 'seed' ),
+				'parent_item_colon' => __( 'Parent Example:', 'seed' ),
+				'edit_item' => __( 'Edit Example', 'seed' ),
+				'update_item' => __( 'Update Example', 'seed' ),
+				'add_new_item' => __( 'Add New Example', 'seed' ),
+				'new_item_name' => __( 'New Example Name', 'seed' ),
+			),
+			'rewrite' => true,
+		)
+	);
+	*/
 }
 
 

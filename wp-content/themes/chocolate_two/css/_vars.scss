@@ -47,7 +47,8 @@ $use-lozenges:      false;
 $use-rules:         false;
 $use-stats:         false;
 $use-greybox:       false;
-$use-clearfix:       false;
+$use-clearfix:      true;
+
 
 
 
@@ -69,7 +70,8 @@ $base-font-family:  sans-serif!default;
  * Responsiveness?
  * Tell inuit.css when breakpoints start, in pixels.
  */
-$responsive:        true;
+$use-responsive:    true;
+
 $lap-start:         660px;
 $desk-start:        860px;
 $desk-wide-start: 	1024px;

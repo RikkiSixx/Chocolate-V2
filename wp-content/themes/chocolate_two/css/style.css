@@ -57,13 +57,13 @@
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
-/* line 2, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+/* line 5, _theme.scss */
 .wrapper {
   margin: auto;
   max-width: 1100px;
 }
 
-/* line 8, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+/* line 11, _theme.scss */
 .project h1:before {
   content: 'Project: ';
 }
@@ -3014,19 +3014,19 @@ label,
  */
 /* line 8, inuit.css/generic/_brand.scss */
 .brand {
-  font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important;
+  font-family: "Raleway Thin", sans-serif!important;
+  color: #539ff4!important;
 }
 
 /* line 12, inuit.css/generic/_brand.scss */
 .brand-face {
-  font-family: "Helvetica Neue", sans-serif!important;
+  font-family: "Raleway Thin", sans-serif!important;
 }
 
 /* line 16, inuit.css/generic/_brand.scss */
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important;
+  color: #539ff4!important;
 }
 
 /*------------------------------------*\

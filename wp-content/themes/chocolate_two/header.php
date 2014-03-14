@@ -16,7 +16,23 @@
 
 		<div class="wrapper hfeed">
 
-			<header id="header" role="banner">
+			<header class="site-header" role="banner">
+				<div class="cf">
+					<nav class="main-menu" role="navigation">					
+						<?php wp_nav_menu( 
+							array( 
+								'theme_location' => 'main-menu', 
+								'container' => false,
+								'menu_class' => 'nav nav--block'
+							) 
+						); ?>
+						
+					</nav>
+					<div class="search ">
+						<?php get_search_form(); ?>
+					</div>
+				</div>
+
 				<section id="branding">
 					<div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
@@ -27,12 +43,7 @@
 					</div>
 				</section>
 
-				<nav id="menu" role="navigation">
-					<div id="search">
-						<?php get_search_form(); ?>
-					</div>
-					<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-				</nav>
-			</header>
+				
+			</header><!-- .site-header -->
 
 			<div id="container">

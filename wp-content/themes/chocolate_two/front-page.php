@@ -13,33 +13,40 @@
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class('desk-one-third grid__item float--left'); ?> <?php if ( 'project' == get_post_type() ) : echo 'class="project" '; endif ?>>
-		<header>
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1> 
-		</header>
+	<article <?php post_class('grid__item desk-one-third post-tile'); ?> <?php if ( 'project' == get_post_type() ) : echo 'class="project" '; endif ?>>
 
-		<section>			
-			<?php if ( has_post_thumbnail() ) { ?>
-			<div style="margin: auto; overflow: hidden; height: 150px; width: 150px; border-radius: 75px;">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-			</div>
-			<?php } ?>
+		<div class="container tile-content">
+			<header>
+				<h1>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				</h1> 
+			</header>
 
-			<?php the_excerpt(); ?>
+			<section>	
+				<div class="post-thumb" style="margin: auto; overflow: hidden; height: 150px; width: 150px; border-radius: 75px;">	
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php if ( has_post_thumbnail() ) { 
+							the_post_thumbnail('thumbnail'); 
+						} else { ?>
+							<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
+						<?php } ?>
+					</a>
+				</div>
 
-			<div class="entry-links">
-				<?php wp_link_pages(); ?>
-			</div>
+				<?php the_excerpt(); ?>
 
-			<?php edit_post_link(); ?>
-		</section>
+				<div class="entry-links">
+					<?php wp_link_pages(); ?>
+				</div>
 
-		<footer class="cf">
-			<?php the_tags( $before, $sep, $after ); ?> 
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
-		</footer>
+				<?php edit_post_link(); ?>
+			</section>
+
+			<footer class="cf">
+				<?php the_tags( $before, $sep, $after ); ?> 
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
+			</footer>
+		</div>
 
 	</article>
 

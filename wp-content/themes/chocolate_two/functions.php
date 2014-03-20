@@ -8,7 +8,7 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		define( 'THEME_LIBRARY', TEMPLATEPATH . '/library' );
 
 		// Library files
-		// require_once( THEME_LIBRARY . '/theme-options.php');	
+		require_once( THEME_LIBRARY . '/theme-options.php');
 
 		load_theme_textdomain( 'chocolate', get_template_directory() . '/languages' );
 
@@ -21,9 +21,6 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		register_nav_menus(
 			array( 'main-menu' => __( 'Main Menu', 'chocolate' ) )
 		);
-
-		// Library files
-		require_once( THEME_LIBRARY . '/theme-options.php');
 
 		// Objects
 		add_action( 'init', 'theme_post_types_init' );
@@ -148,7 +145,8 @@ function theme_taxonomies_init() {
 }
 
 
-
+require get_template_directory() . '/inc/template-tags.php'; // Custom template tags for this theme.
+require get_template_directory() . '/inc/custom-header.php'; // Custom header image
 
 
 

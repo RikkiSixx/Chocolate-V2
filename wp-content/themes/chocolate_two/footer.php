@@ -1,5 +1,5 @@
-				<div class="clear"></div>
-			</div>
+
+			</div><!-- .container -->
 
 			<footer id="footer" role="contentinfo">
 				<div id="copyright">

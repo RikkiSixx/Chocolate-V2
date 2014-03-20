@@ -12,38 +12,40 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?>>	
+
+		<header class="site-header" role="banner">
+			<div class="cf">
+				<nav class="main-menu" role="navigation">					
+					<?php wp_nav_menu( 
+						array( 
+							'theme_location' => 'main-menu', 
+							'container' => false,
+							'menu_class' => 'nav'
+						) 
+					); ?>					
+				</nav>
+
+				<div class="search">
+					<?php get_search_form(); ?>
+				</div>
+			</div>
+
+			<!--<img src="<?php header_image(); ?>" width="100%" height="auto" alt="">-->
+
+			<section id="branding" class="text--center island">
+				<div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+					<?php if ( ! is_singular() ) { echo '</h1>'; } ?>
+				</div>
+				<div id="site-description">
+					<?php bloginfo( 'description' ); ?>
+				</div>
+			</section>
+
+			
+		</header><!-- .site-header -->
 
 		<div class="wrapper hfeed">
 
-			<header class="site-header" role="banner">
-				<div class="cf">
-					<nav class="main-menu" role="navigation">					
-						<?php wp_nav_menu( 
-							array( 
-								'theme_location' => 'main-menu', 
-								'container' => false,
-								'menu_class' => 'nav nav--block'
-							) 
-						); ?>
-						
-					</nav>
-					<div class="search ">
-						<?php get_search_form(); ?>
-					</div>
-				</div>
-
-				<section id="branding">
-					<div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-						<?php if ( ! is_singular() ) { echo '</h1>'; } ?>
-					</div>
-					<div id="site-description">
-						<?php bloginfo( 'description' ); ?>
-					</div>
-				</section>
-
-				
-			</header><!-- .site-header -->
-
-			<div id="container">
+			<div class="container cf">

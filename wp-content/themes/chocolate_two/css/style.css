@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Raleway:300|Open+Sans);
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -57,17 +58,148 @@
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
-/* line 5, _theme.scss */
+/* 
+
+Rik Kendell, UI developer & designer website and blog
+
+Author: Rik Kendell - @Rikki_Sixx
+Version: 2.5;
+URL: http://www.rikkendell.co.uk/
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. BASE STYLES
+2. BASE TYPOGRAPHY & LINKS
+3. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+4. CUSTOM LAYOUT & TYPOGRAPHY 
+5. BROWSER AND NON-SEMANTIC STYLING 
+
+*/
+/* ==========================================================================
+   1. Base styles
+   ========================================================================== */
+/* line 31, _theme.scss */
+body {
+  background: #f5f5f5;
+  color: #303030;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ==========================================================================
+   2. Base Typography & Links
+   ========================================================================== */
+/* line 43, _theme.scss */
+a,
+a:visited {
+  text-decoration: none;
+  color: #cc0033;
+}
+
+/* line 48, _theme.scss */
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/* line 52, _theme.scss */
+h1, h2, h3 {
+  font-family: "Droid Serif", serif;
+}
+
+/* ==========================================================================
+   3. Global layout & Typography
+   ========================================================================== */
+/* line 61, _theme.scss */
 .wrapper {
   margin: auto;
   max-width: 1100px;
 }
 
-/* line 11, _theme.scss */
-.project h1:before {
-  content: 'Project: ';
+/* line 66, _theme.scss */
+.container {
+  margin: auto;
+  padding: 10px;
 }
 
+/* line 72, _theme.scss */
+h1 a, h1 a:visited {
+  color: #3A3A44;
+}
+/* line 73, _theme.scss */
+h1 a:hover, h1 a:active {
+  color: #cc0033;
+  text-decoration: none;
+}
+
+/* line 79, _theme.scss */
+.tile-content {
+  background: #fff;
+}
+
+/* line 83, _theme.scss */
+.site-header {
+  border-top: 4px solid #cc0033;
+}
+
+/* line 87, _theme.scss */
+.main-menu ul li {
+  background: #333;
+  display: block;
+}
+/* line 90, _theme.scss */
+.main-menu ul li:hover {
+  background: #3e3e3e;
+}
+/* line 92, _theme.scss */
+.main-menu a {
+  color: #fff;
+  display: block;
+  height: 100%;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+/* line 101, _theme.scss */
+article.post-preview {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 109, _theme.scss */
+.post-thumb {
+  margin: auto;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+/* line 118, _theme.scss */
+.sidebar ul {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 122, _theme.scss */
+.sidebar li {
+  margin-bottom: 1em;
+}
+
+/* ==========================================================================
+   4. Custom layout
+   ========================================================================== */
+@media screen and (min-width: 860px) {
+  /* line 135, _theme.scss */
+  .main-menu,
+  .search {
+    float: left;
+  }
+
+  /* line 139, _theme.scss */
+  .post-tile {
+    float: left;
+  }
+}
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
@@ -3014,13 +3146,13 @@ label,
  */
 /* line 8, inuit.css/generic/_brand.scss */
 .brand {
-  font-family: "Raleway Thin", sans-serif!important;
+  font-family: "Droid Serif", serif!important;
   color: #539ff4!important;
 }
 
 /* line 12, inuit.css/generic/_brand.scss */
 .brand-face {
-  font-family: "Raleway Thin", sans-serif!important;
+  font-family: "Droid Serif", serif!important;
 }
 
 /* line 16, inuit.css/generic/_brand.scss */

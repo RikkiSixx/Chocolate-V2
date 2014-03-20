@@ -1,4 +1,4 @@
-<aside class="sidebar" role="complementary">
+<aside class="sidebar desk-one-quarter" role="complementary">
 
 	<?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>
 

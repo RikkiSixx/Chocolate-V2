@@ -13,9 +13,10 @@ Template Name: Projects Page
 			'post_type' => array('project'),			
 			'posts_per_page' => 6
 		);
-		query_posts($args);
 
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		$projectPosts = get_posts( $args );
+
+		foreach ( $projectPosts as $post ) : setup_postdata( $post ); 
 	?>
 
 	<article <?php post_class(); ?>>
@@ -35,17 +36,8 @@ Template Name: Projects Page
 
 	</article>
 
-	<?php if ( ! post_password_required() ) comments_template( '', true ); ?>
-
-
-	<?php endwhile; // have_posts ?>
-
-	<?php
-		// Previous/next page navigation.
-		chocolate_paging_nav(); 
-	?>
-
-	<?php endif; // have_posts ?>
+	<?php endforeach; 
+	wp_reset_postdata();?>
 
 </section>
 

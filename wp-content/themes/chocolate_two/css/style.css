@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Raleway:300|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,600,700);
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -81,46 +81,49 @@ CONTENTS - GLOBAL.CSS
 /* line 31, _theme.scss */
 body {
   background: #f5f5f5;
-  color: #303030;
-  font-family: 'Open Sans', sans-serif;
+  color: #383e42;
 }
 
 /* ==========================================================================
    2. Base Typography & Links
    ========================================================================== */
-/* line 43, _theme.scss */
+/* line 42, _theme.scss */
 a,
 a:visited {
   text-decoration: none;
   color: #cc0033;
 }
 
-/* line 48, _theme.scss */
+/* line 47, _theme.scss */
 a:hover,
 a:active {
   text-decoration: underline;
 }
 
-/* line 52, _theme.scss */
+/* line 51, _theme.scss */
 h1, h2, h3 {
-  font-family: "Droid Serif", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* ==========================================================================
    3. Global layout & Typography
    ========================================================================== */
-/* line 61, _theme.scss */
+/* line 60, _theme.scss */
 .wrapper {
   margin: auto;
   max-width: 1100px;
 }
 
-/* line 66, _theme.scss */
+/* line 65, _theme.scss */
 .container {
   margin: auto;
   padding: 10px;
 }
 
+/* line 70, _theme.scss */
+h1 {
+  font-weight: 700;
+}
 /* line 72, _theme.scss */
 h1 a, h1 a:visited {
   color: #3A3A44;
@@ -132,25 +135,29 @@ h1 a:hover, h1 a:active {
 }
 
 /* line 79, _theme.scss */
-.tile-content {
-  background: #fff;
-}
-
-/* line 83, _theme.scss */
 .site-header {
+  background-size: cover;
   border-top: 4px solid #cc0033;
+  color: #fff;
+}
+/* line 83, _theme.scss */
+.site-header h1 a {
+  color: #fff;
 }
 
-/* line 87, _theme.scss */
-.main-menu ul li {
+/* line 86, _theme.scss */
+.main-menu {
   background: #333;
+}
+/* line 89, _theme.scss */
+.main-menu ul li {
   display: block;
 }
-/* line 90, _theme.scss */
+/* line 91, _theme.scss */
 .main-menu ul li:hover {
   background: #3e3e3e;
 }
-/* line 92, _theme.scss */
+/* line 93, _theme.scss */
 .main-menu a {
   color: #fff;
   display: block;
@@ -159,14 +166,18 @@ h1 a:hover, h1 a:active {
   width: 100%;
 }
 
-/* line 101, _theme.scss */
-article.post-preview {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
+/* line 102, _theme.scss */
+.site-footer {
+  background: #333;
+  color: #fff;
 }
 
-/* line 109, _theme.scss */
+/* line 107, _theme.scss */
+.post-tile {
+  margin: 0 auto 1em;
+}
+
+/* line 110, _theme.scss */
 .post-thumb {
   margin: auto;
   overflow: hidden;
@@ -175,27 +186,81 @@ article.post-preview {
   border-radius: 75px;
 }
 
-/* line 118, _theme.scss */
+/* line 119, _theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 122, _theme.scss */
+/* line 123, _theme.scss */
 .sidebar li {
   margin-bottom: 1em;
+}
+
+/* line 129, _theme.scss */
+.post-content img {
+  height: auto;
+  max-width: 720px;
+  width: 100%;
+}
+
+/* line 135, _theme.scss */
+.post-thumb {
+  border-radius: 75px;
+  height: 150px;
+  margin: 0 auto 1em;
+  overflow: hidden;
+  width: 150px;
 }
 
 /* ==========================================================================
    4. Custom layout
    ========================================================================== */
+/* line 150, _theme.scss */
+.recent-posts h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/* line 157, _theme.scss */
+.post-listing {
+  max-width: 720px;
+}
+
+/* line 161, _theme.scss */
+.tile-content,
+article.post-preview {
+  background: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1em 10px;
+}
+
+/* line 166, _theme.scss */
+article.post-preview {
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 171, _theme.scss */
+  .main-menu {
+    width: 100%;
+  }
+  /* line 173, _theme.scss */
+  .main-menu ul {
+    margin-bottom: 0;
+  }
+  /* line 177, _theme.scss */
+  .main-menu ul li {
+    display: inline-block;
+  }
+}
 @media screen and (min-width: 860px) {
-  /* line 135, _theme.scss */
+  /* line 187, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 139, _theme.scss */
+  /* line 191, _theme.scss */
   .post-tile {
     float: left;
   }
@@ -1123,7 +1188,7 @@ ul, ol, dd {
 \*------------------------------------*/
 /* line 4, inuit.css/base/_main.scss */
 html {
-  font: 1em/1.5 sans-serif;
+  font: 1em/1.5 "Droid Serif", serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -2379,7 +2444,7 @@ label,
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
  */
-@media only screen and (max-width: 659px) {
+@media only screen and (max-width: 639px) {
   /**
   * Whole
   */
@@ -2527,7 +2592,7 @@ label,
     width: 91.666%;
   }
 }
-@media only screen and (min-width: 660px) and (max-width: 859px) {
+@media only screen and (min-width: 640px) and (max-width: 859px) {
   /**
   * Whole
   */
@@ -2675,7 +2740,7 @@ label,
     width: 91.666%;
   }
 }
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 640px) {
   /**
   * Whole
   */
@@ -3146,13 +3211,13 @@ label,
  */
 /* line 8, inuit.css/generic/_brand.scss */
 .brand {
-  font-family: "Droid Serif", serif!important;
+  font-family: "Open Sans", sans-serif!important;
   color: #539ff4!important;
 }
 
 /* line 12, inuit.css/generic/_brand.scss */
 .brand-face {
-  font-family: "Droid Serif", serif!important;
+  font-family: "Open Sans", sans-serif!important;
 }
 
 /* line 16, inuit.css/generic/_brand.scss */
@@ -3534,7 +3599,7 @@ label,
   width: 1px!important;
 }
 
-@media only screen and (max-width: 659px) {
+@media only screen and (max-width: 639px) {
   /* line 179, inuit.css/generic/_helper.scss */
   .accessibility--palm,
   .visuallyhidden--palm {
@@ -3548,7 +3613,7 @@ label,
     width: 1px!important;
   }
 }
-@media only screen and (min-width: 660px) and (max-width: 859px) {
+@media only screen and (min-width: 640px) and (max-width: 859px) {
   /* line 179, inuit.css/generic/_helper.scss */
   .accessibility--lap,
   .visuallyhidden--lap {
@@ -3562,7 +3627,7 @@ label,
     width: 1px!important;
   }
 }
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 640px) {
   /* line 179, inuit.css/generic/_helper.scss */
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {

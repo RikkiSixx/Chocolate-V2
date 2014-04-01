@@ -13,9 +13,10 @@ Template Name: Blog Listing Page
 			'post_type' => array('post'),			
 			'posts_per_page' => 6
 		);
-		query_posts($args);
 
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		$blogPosts = get_posts( $args );
+
+		foreach ( $blogPosts as $post ) : setup_postdata( $post ); 
 	?>
 
 	<article class="post-preview">
@@ -52,18 +53,8 @@ Template Name: Blog Listing Page
 
 	</article>
 
-	<?php endwhile; // have_posts ?>
-
-	<?php
-		// Previous/next page navigation.
-		chocolate_paging_nav(); 
-	?>
-
-	<?php endif; // have_posts ?>
-
-
-
-	<?php wp_reset_query(); ?>
+	<?php endforeach; 
+	wp_reset_postdata();?>
 
 </section>
 

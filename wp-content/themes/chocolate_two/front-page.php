@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid cf" role="main">
+<section class="recent-posts grid cf" role="main">
 	
 	<?php
 		// Find posts in 'Projects' post type 
@@ -17,13 +17,7 @@
 
 		<div class="container tile-content">
 			<header>
-				<h1>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-				</h1> 
-			</header>
-
-			<section>	
-				<div class="post-thumb" style="margin: auto; overflow: hidden; height: 150px; width: 150px; border-radius: 75px;">	
+				<div class="post-thumb">	
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<?php if ( has_post_thumbnail() ) { 
 							the_post_thumbnail('thumbnail'); 
@@ -32,7 +26,12 @@
 						<?php } ?>
 					</a>
 				</div>
+				<h1>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				</h1> 
+			</header>
 
+			<section>	
 				<?php the_excerpt(); ?>
 
 				<div class="entry-links">

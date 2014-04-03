@@ -1,7 +1,5 @@
 
-			</div><!-- .container -->
-
-		</div><!-- .wrapper -->
+		</div><!-- .hfeed -->
 
 		<footer class="site-footer" role="contentinfo">
 

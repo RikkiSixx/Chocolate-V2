@@ -28,6 +28,8 @@
 			</nav>
 
 			<section class="branding text--center">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/motif.png" class="motif" alt="Rik Kendell" />
+				
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
 				</h1>
@@ -38,6 +40,4 @@
 			
 		</header><!-- .site-header -->
 
-		<div class="wrapper hfeed">
-
-			<div class="container cf">
+		<div class="hfeed">

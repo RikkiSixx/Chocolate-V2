@@ -1,6 +1,6 @@
 <?php if ( 'comments.php' == basename( $_SERVER['SCRIPT_FILENAME'] ) ) return; ?>
 
-<section id="comments">
+<section class="comments">
 	<?php 
 	if ( have_comments() ) : 
 		global $comments_by_type;
@@ -50,4 +50,4 @@
 	endif;
 	if ( comments_open() ) comment_form();
 	?>
-</section>
+</section><!-- .comments -->

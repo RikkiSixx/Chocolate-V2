@@ -112,8 +112,13 @@ function theme_post_types_init() {
 			),
 		)
 	);
+}
 
-	/*
+
+add_action( 'init', 'theme_taxonomies_init');
+
+function theme_taxonomies_init() {	
+/*
 	register_taxonomy(
 		'example',
 		array( 'post' ),
@@ -139,10 +144,6 @@ function theme_post_types_init() {
 	*/
 }
 
-
-function theme_taxonomies_init() {
-	
-}
 
 
 require get_template_directory() . '/inc/template-tags.php'; // Custom template tags for this theme.

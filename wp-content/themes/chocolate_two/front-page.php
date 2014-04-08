@@ -18,36 +18,40 @@
 		<article <?php post_class('grid__item desk-one-third post-tile'); ?> <?php if ( 'project' == get_post_type() ) : echo 'class="project" '; endif ?>>
 
 			<div class="container tile-content">
-				<header>
-					<div class="post-thumb">	
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php if ( has_post_thumbnail() ) { 
-								the_post_thumbnail('thumbnail'); 
-							} else { ?>
-								<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
-							<?php } ?>
-						</a>
-					</div>
-					<h1>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-					</h1> 
-				</header>
+				<div class="equal-height">
+					<header>
+						<div class="post-thumb">	
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php if ( has_post_thumbnail() ) { 
+									the_post_thumbnail('thumbnail'); 
+								} else { ?>
+									<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
+								<?php } ?>
+							</a>
+						</div>
+						<h1>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						</h1> 
+					</header>
 
-				<section>	
-					<?php the_excerpt(); ?>
+					<section>	
+						<?php the_excerpt(); ?>
 
-					<div class="entry-links">
-						<?php wp_link_pages(); ?>
-					</div>
+						<div class="entry-links">
+							<?php wp_link_pages(); ?>
+						</div>
 
-					<?php edit_post_link(); ?>
-				</section>
+						<?php edit_post_link(); ?>
+					</section>	
+				</div><!-- .equal-height -->
 
 				<footer class="cf">
 					<?php the_tags( $before, $sep, $after ); ?> 
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
-				</footer>
-			</div>
+				</footer>			
+			</div><!-- .tile-content -->
+
+			
 
 		</article>
 

@@ -5,7 +5,7 @@ Template Name: Blog Listing Page
 ?>
 <?php get_header(); ?>
 
-<section class="post-listing" role="main">
+<section class="post-listing container" role="main">
 
 	<?php
 		// Find posts in 'Projects' post type 
@@ -58,6 +58,6 @@ Template Name: Blog Listing Page
 
 </section>
 
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 
 <?php get_footer(); ?>

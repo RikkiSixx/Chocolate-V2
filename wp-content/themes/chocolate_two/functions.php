@@ -26,8 +26,9 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		);
 
 		// Objects
-		add_action( 'init', 'theme_post_types_init' );
-		add_action( 'init', 'theme_taxonomies_init' );
+		add_action( 'init', 'chocolate_post_types_init' );
+		add_action( 'init', 'chocolate_taxonomies_init' );
+		add_action( 'init', 'chocolate_enqueue_scripts' );
 
 		//Actions
 		remove_action( 'wp_head', 'rsd_link' );
@@ -38,7 +39,7 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 		remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 		remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
-		add_action( 'init', 'theme_enqueue_scripts' );
+		
 
 
 function theme_favicon() {
@@ -47,12 +48,20 @@ function theme_favicon() {
 	}
 
 
-add_action( 'wp_enqueue_scripts', 'chocolate_load_scripts' );
-	function theme_enqueue_scripts() {
+add_action( 'wp_enqueue_scripts', 'chocolate_enqueue_scripts' );
+	function chocolate_enqueue_scripts() {
 		if ( !is_admin() ) {
+			// De-register jQuery
 			wp_deregister_script( 'jquery' );
 		}
+
+
+		$jqueryScript = 'http'. ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . '://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
+	    wp_register_script('jquery', $jqueryScript, false, '1.10.2', true);
+	    wp_enqueue_script('jquery');
 	}
+
+
 
 add_action( 'comment_form_before', 'chocolate_enqueue_comment_reply_script' );
 	function chocolate_enqueue_comment_reply_script() {
@@ -97,7 +106,7 @@ add_action( 'widgets_init', 'chocolate_widgets_init' );
 /* THEME OBJECTS
 ----------------------------------------*/
 
-function theme_post_types_init() {
+function chocolate_post_types_init() {
 	register_post_type( 
 		'project',
 		array(
@@ -139,9 +148,8 @@ function theme_post_types_init() {
 }
 
 
-add_action( 'init', 'theme_taxonomies_init');
 
-function theme_taxonomies_init() {	
+function chocolate_taxonomies_init() {	
 /*
 	register_taxonomy(
 		'example',

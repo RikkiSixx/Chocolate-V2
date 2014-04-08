@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Home Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="container">
@@ -41,13 +47,15 @@
 							<?php wp_link_pages(); ?>
 						</div>
 
-						<?php edit_post_link(); ?>
 					</section>	
 				</div><!-- .equal-height -->
 
 				<footer class="cf">
-					<?php the_tags( $before, $sep, $after ); ?> 
+					<span><?php the_tags( $before, $sep, $after ); ?></span>
+
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a>
+
+					<span><?php edit_post_link(); ?></span>
 				</footer>			
 			</div><!-- .tile-content -->
 
@@ -64,9 +72,8 @@
 </div><!-- .container -->
 
 <section class="about-me">
-	<div class="container">
-		<h2>Sub-Title</h2>
-		<p>Bacon ipsum dolor sit amet bresaola prosciutto beef ex. Shank ground round porchetta laborum pork belly kielbasa aute t-bone boudin in. Jowl ex spare ribs leberkas ad officia eu proident et salami pancetta qui. Consectetur in ex, aliquip commodo tri-tip short ribs sed brisket in non officia. Laborum swine ground round brisket. Corned beef short ribs biltong, commodo id meatball consequat dolore jerky ullamco fatback leberkas pork loin frankfurter ad. Aute meatloaf tail flank biltong porchetta pig dolore eiusmod prosciutto velit.</p>
+	<div class="container">		
+		<?php the_content(); ?>
 	</div>
 </section>
 

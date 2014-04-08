@@ -184,15 +184,28 @@ article.post-preview {
 }
 
 // Blog Posts
-.post {
-    p, ul, ol, dl, blockquote {
-        max-width: 780px;
+.post-wrapper {
+    margin: auto;
+    max-width: 780px;
+}
+.entry-footer {
+    span {
+        display: block;
+        margin-bottom: 1.5rem;
     }
 }
 
 // Comments 
 .comments {
     padding: 40px 0;
+}
+
+.nav-previous{
+    margin-bottom: 1rem;
+    &:before { content: 'Previous post: '; }
+}
+.nav-next{
+    &:before { content: 'Next post: '; }
 }
 
 
@@ -207,6 +220,25 @@ article.post-preview {
                 display: inline-block;
             }
         }
+    }
+
+    .entry-footer {
+        span {
+            float: left;
+            width: 45%;
+        }
+    }
+    
+    .nav-previous,
+    .nav-next {
+        width: 45%;
+        &:before { content: ''; }
+    }
+    .nav-previous { 
+        float: left;
+    }
+    .nav-next {
+        float: right;
     }
 
     .comments {

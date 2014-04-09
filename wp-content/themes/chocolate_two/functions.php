@@ -148,6 +148,46 @@ function chocolate_post_types_init() {
 			),
 		)
 	);
+
+
+	register_post_type( 
+		'quest-level',
+		array(
+			'labels' => array(			
+				'name' => __( 'Quest Level', THEME_SLUG ),
+				'singular_name' => __( 'Quest Level', THEME_SLUG ),
+				'add_new' => __( 'Add New', THEME_SLUG ),
+				'add_new_item' => __( 'Add New Quest Level', THEME_SLUG ),
+				'edit' => __( 'Edit', THEME_SLUG ),
+				'edit_item' => __( 'Edit Quest Level', THEME_SLUG ),
+				'new_item' => __( 'New Quest Level', THEME_SLUG ),
+				'view' => __( 'View Quest Level', THEME_SLUG ),
+				'view_item' => __( 'View Quest Level', THEME_SLUG ),
+				'search_items' => __( 'Search Quest Level', THEME_SLUG ),
+				'not_found' => __( 'No levels found', THEME_SLUG ),
+				'not_found_in_trash' => __( 'No levels found in Trash', THEME_SLUG ),
+				'parent' => __( 'Parent Quest Level', THEME_SLUG  )				
+			),
+			'description' => __( 'Levels / to-do lists for "Epic Quest" page', THEME_SLUG ),
+			'public' => true,
+			'menu_icon' => 'dashicons-admin-post',
+			'supports' => array( 
+				'title',
+				'editor',
+				'excerpt',
+				'custom-fields',
+				'thumbnail',
+				'page-attributes',
+				'comments',
+				'trackbacks',
+				'author',
+				'revisions'
+			),
+			'rewrite' => array(		
+				'slug' => __('level', THEME_SLUG),
+			),
+		)
+	);
 }
 
 

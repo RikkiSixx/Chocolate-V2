@@ -5,7 +5,7 @@
 
 			<div class="container">
 				<div class="copyright">
-					<p><?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'chocolate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); ?>
+					<p><?php echo sprintf( __( '%1$s %2$s %3$s', 'chocolate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); ?>
 				</div>
 			</div>
 

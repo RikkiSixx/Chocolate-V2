@@ -118,7 +118,7 @@ h1, h2, h3 {
 .container {
   margin: auto;
   max-width: 1100px;
-  padding: 10px;
+  padding: 1em;
 }
 
 /* line 71, _theme.scss */
@@ -137,27 +137,28 @@ h1 a:hover, h1 a:active {
 
 /* line 80, _theme.scss */
 .site-header {
+  background-position: center;
   background-size: cover;
   border-top: 4px solid #cc0033;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 86, _theme.scss */
+/* line 87, _theme.scss */
 .site-header .branding {
-  padding: 85px 0 50px;
+  padding: 25px 0;
 }
-/* line 89, _theme.scss */
+/* line 90, _theme.scss */
 .site-header h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3.75em;
+  font-size: 2.25em;
   font-weight: normal;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 94, _theme.scss */
+/* line 95, _theme.scss */
 .site-header h1 a {
   color: #fff;
 }
-/* line 96, _theme.scss */
+/* line 97, _theme.scss */
 .site-header .motif {
   border: 2px solid #fff;
   border-radius: 75px;
@@ -165,56 +166,67 @@ h1 a:hover, h1 a:active {
   overflow: hidden;
 }
 
-/* line 104, _theme.scss */
+/* line 105, _theme.scss */
 .main-menu {
   background: #333;
 }
-/* line 107, _theme.scss */
-.main-menu ul li {
+/* line 108, _theme.scss */
+.main-menu .menu-button {
+  background: none;
+  color: #fff;
+}
+/* line 113, _theme.scss */
+.main-menu .flexnav {
+  position: absolute;
+}
+/* line 115, _theme.scss */
+.main-menu .flexnav li {
+  background: #333;
   display: block;
 }
-/* line 109, _theme.scss */
-.main-menu ul li:hover {
+/* line 119, _theme.scss */
+.main-menu .flexnav li:hover {
   background: #3e3e3e;
 }
-/* line 111, _theme.scss */
-.main-menu a {
+/* line 121, _theme.scss */
+.main-menu .flexnav li a {
+  background: none;
   color: #fff;
   display: block;
   height: 100%;
-  padding: 5px 10px;
+  padding: 1em;
   width: 100%;
 }
 
-/* line 121, _theme.scss */
+/* line 134, _theme.scss */
 .site-footer {
   background: #333;
   color: #fff;
 }
 
-/* line 126, _theme.scss */
+/* line 139, _theme.scss */
 .post-tile {
   margin: 0 auto 1em;
 }
 
-/* line 131, _theme.scss */
+/* line 144, _theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 135, _theme.scss */
+/* line 148, _theme.scss */
 .sidebar li {
   margin-bottom: 1em;
 }
 
-/* line 141, _theme.scss */
+/* line 154, _theme.scss */
 .post-content img {
   height: auto;
   max-width: 720px;
   width: 100%;
 }
 
-/* line 147, _theme.scss */
+/* line 160, _theme.scss */
 .post-thumb {
   border-radius: 75px;
   height: 150px;
@@ -223,125 +235,155 @@ h1 a:hover, h1 a:active {
   width: 150px;
 }
 
+/* line 169, _theme.scss */
+.post-wrapper {
+  margin: auto;
+  max-width: 780px;
+}
+
+/* line 174, _theme.scss */
+.entry-footer span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+/* line 181, _theme.scss */
+.comments {
+  padding: 40px 0;
+}
+
+/* line 185, _theme.scss */
+.nav-previous {
+  margin-bottom: 1rem;
+}
+/* line 187, _theme.scss */
+.nav-previous:before {
+  content: 'Previous post: ';
+}
+
+/* line 190, _theme.scss */
+.nav-next:before {
+  content: 'Next post: ';
+}
+
 /* ==========================================================================
-   4. Custom layout, inc Media Queries
+   4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 162, _theme.scss */
+/* line 200, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 167, _theme.scss */
+/* line 205, _theme.scss */
 .about-me {
   background: #fff;
 }
+/* line 207, _theme.scss */
+.about-me .about-img {
+  text-align: center;
+}
 
-/* line 173, _theme.scss */
+/* line 212, _theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 177, _theme.scss */
+/* line 216, _theme.scss */
 .tile-content,
 article.post-preview {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1em 10px;
 }
+/* line 220, _theme.scss */
+.tile-content footer,
+article.post-preview footer {
+  margin: 1.5rem 0 0;
+}
 
-/* line 182, _theme.scss */
+/* line 222, _theme.scss */
 article.post-preview {
   margin-bottom: 1em;
 }
 
-/* line 187, _theme.scss */
-.post-wrapper {
-  margin: auto;
-  max-width: 780px;
-}
-
-/* line 192, _theme.scss */
-.entry-footer span {
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-/* line 199, _theme.scss */
-.comments {
-  padding: 40px 0;
-}
-
-/* line 203, _theme.scss */
-.nav-previous {
-  margin-bottom: 1rem;
-}
-/* line 205, _theme.scss */
-.nav-previous:before {
-  content: 'Previous post: ';
-}
-
-/* line 208, _theme.scss */
-.nav-next:before {
-  content: 'Next post: ';
-}
-
 @media screen and (min-width: 640px) {
-  /* line 213, _theme.scss */
+  /* line 231, _theme.scss */
+  .site-header .branding {
+    padding: 85px 0 50px;
+  }
+  /* line 234, _theme.scss */
+  .site-header h1 {
+    font-size: 3.75em;
+  }
+
+  /* line 236, _theme.scss */
   .main-menu {
     width: 100%;
   }
-  /* line 215, _theme.scss */
-  .main-menu ul {
-    margin-bottom: 0;
+  /* line 238, _theme.scss */
+  .main-menu .flexnav {
+    position: inherit;
   }
-  /* line 219, _theme.scss */
-  .main-menu ul li {
-    display: inline-block;
+  /* line 240, _theme.scss */
+  .main-menu .flexnav li a {
+    border-left: 0;
+    border-right: 1px solid #aaa;
   }
 
-  /* line 226, _theme.scss */
+  /* line 248, _theme.scss */
   .entry-footer span {
     float: left;
     width: 45%;
   }
 
-  /* line 233, _theme.scss */
+  /* line 255, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 235, _theme.scss */
+  /* line 257, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 237, _theme.scss */
+  /* line 259, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 240, _theme.scss */
+  /* line 262, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 244, _theme.scss */
+  /* line 266, _theme.scss */
   .comments {
     padding: 40px;
   }
 }
 @media screen and (min-width: 860px) {
-  /* line 252, _theme.scss */
+  /* line 274, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 256, _theme.scss */
+  /* line 278, _theme.scss */
   .post-tile {
     float: left;
+  }
+
+  /* line 283, _theme.scss */
+  .about-img {
+    float: left;
+  }
+
+  /* line 286, _theme.scss */
+  .about-content {
+    float: right;
+    padding-left: 1em;
   }
 }
 /* Flexnav Base Styles */

@@ -30,6 +30,9 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		add_action( 'init', 'chocolate_taxonomies_init' );
 		add_action( 'init', 'chocolate_enqueue_scripts' );
 
+		add_image_size( 'about-thumb', 356, 356, true );
+
+
 		//Actions
 		remove_action( 'wp_head', 'rsd_link' );
 		remove_action( 'wp_head', 'wp_generator' );

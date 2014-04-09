@@ -65,7 +65,7 @@ h1, h2, h3 {
 .container {
 	margin: auto;
     max-width: 1100px;
-	padding: 10px;
+	padding: 1em;
 }
 
 h1 {
@@ -78,17 +78,18 @@ h1 {
 }
 
 .site-header {
+    background-position: center;
     background-size: cover;
     border-top: 4px solid $support-color;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
     .branding { 
-        padding: 85px 0 50px;
+        padding: 25px 0;
     }
     h1 {
         font-family: $brand-face;
-        font-size: 3.75em;
+        font-size: 2.25em;
         font-weight: normal;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
         a { color: #fff; }
@@ -104,16 +105,28 @@ h1 {
 .main-menu {  
     background: #333;
 
-    ul li {     
-        display: block; 
-        &:hover { background: #3e3e3e;}
-    }
-    a {    
+    .menu-button { 
+        background: none; 
         color: #fff;
-        display: block;
-        height: 100%;
-        padding: 5px 10px;
-        width: 100%;
+    }
+
+    .flexnav { 
+        position: absolute; 
+        li {   
+            background: #333;  
+            display: block; 
+
+            &:hover { background: #3e3e3e;}
+            
+            a {    
+                background: none;
+                color: #fff;
+                display: block;
+                height: 100%;
+                padding: 1em;
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -152,37 +165,6 @@ h1 {
     width: 150px; 
 }
 
-
-/* ==========================================================================
-   4. Custom layout, inc Media Queries
-   ========================================================================== */
-
-// Homepage 
-.recent-posts {
-    h1 { 
-        font-size: 24px;
-        font-size: 1.5rem;
-    }
-}
-.about-me {
-    background: #fff;
-}
-
-
-// Blog Post List
-.post-listing { 
-    max-width: 780px;
-}
-.tile-content,
-article.post-preview {
-    background: #fff;  
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    padding: 1em 10px;
-}
-article.post-preview {  
-    margin-bottom: 1em;
-}
-
 // Blog Posts
 .post-wrapper {
     margin: auto;
@@ -209,15 +191,55 @@ article.post-preview {
 }
 
 
+/* ==========================================================================
+   4. Custom layout - Page specific, media queries, etc.
+   ========================================================================== */
+
+// Homepage 
+.recent-posts {
+    h1 { 
+        font-size: 24px;
+        font-size: 1.5rem;
+    }
+}
+.about-me {
+    background: #fff;
+    .about-img { text-align: center; }
+}
+
+
+// Blog Post List
+.post-listing { 
+    max-width: 780px;
+}
+.tile-content,
+article.post-preview {
+    background: #fff;  
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1em 10px;
+    footer { margin: 1.5rem 0 0;}
+}
+article.post-preview {  
+    margin-bottom: 1em;
+}
+
+
+
+
 @media screen and (min-width: $lap-start) {
+    .site-header {
+        .branding { 
+            padding: 85px 0 50px;
+        }
+        h1 { font-size: 3.75em; }
+    }
     .main-menu {
         width: 100%;
-        ul {
-
-            margin-bottom: 0;
-            
-            li {
-                display: inline-block;
+        .flexnav { 
+            position: inherit; 
+            li a { 
+                border-left: 0;
+                border-right: 1px solid #aaa;
             }
         }
     }
@@ -244,7 +266,7 @@ article.post-preview {
     .comments {
         padding: 40px;
     }
-}
+} // Min-width : LAP
 
 @media screen and (min-width: $desk-start) {
 
@@ -255,6 +277,15 @@ article.post-preview {
 
     .post-tile {
         float: left;
+    }
+
+
+    .about-img {
+        float: left;
+    }
+    .about-content {
+        float: right;
+        padding-left: 1em;
     }
 
 } // Min-width : DESK

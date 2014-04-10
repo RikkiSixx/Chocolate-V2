@@ -43,13 +43,11 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 		remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 		
-
+	}
 
 function theme_favicon() {
 	echo '<link rel="shortcut icon" href="' . get_template_directory_uri() . '/img/favicon.ico">';
 }
-	}
-
 
 add_action( 'wp_enqueue_scripts', 'chocolate_enqueue_scripts' );
 	function chocolate_enqueue_scripts() {

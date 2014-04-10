@@ -204,7 +204,13 @@ h1 {
 }
 .about-me {
     background: #fff;
-    .about-img { text-align: center; }
+    .about-img { 
+        text-align: center; 
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 
@@ -266,6 +272,15 @@ article.post-preview {
     .comments {
         padding: 40px;
     }
+
+    .about-img {
+        float: left;
+    }
+    .about-content {
+        float: right;
+        padding-left: 1em;
+    }
+    
 } // Min-width : LAP
 
 @media screen and (min-width: $desk-start) {
@@ -277,15 +292,6 @@ article.post-preview {
 
     .post-tile {
         float: left;
-    }
-
-
-    .about-img {
-        float: left;
-    }
-    .about-content {
-        float: right;
-        padding-left: 1em;
     }
 
 } // Min-width : DESK

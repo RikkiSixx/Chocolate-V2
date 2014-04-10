@@ -66,10 +66,10 @@ Template Name: Home Page
 
 <section class="about-me">
 	<div class="container cf">
-		<div class="about-content desk-two-thirds">
+		<div class="about-content lap-three-quarters desk-two-thirds">
 			<?php the_content(); ?>
 		</div>
-		<div class="about-img desk-one-third">
+		<div class="about-img lap-one-quarter desk-one-third">
 			<?php if ( has_post_thumbnail() ) { 
 				the_post_thumbnail('about-thumb'); 
 			} else { ?>

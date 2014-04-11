@@ -240,28 +240,38 @@ h1 a:hover, h1 a:active {
   margin: auto;
   max-width: 780px;
 }
+/* line 172, _theme.scss */
+.post-wrapper img[width], .post-wrapper img[height] {
+  max-width: 100%;
+  height: auto;
+}
 
-/* line 174, _theme.scss */
+/* line 178, _theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 181, _theme.scss */
+/* line 185, _theme.scss */
 .comments {
   padding: 40px 0;
 }
 
-/* line 185, _theme.scss */
+/* line 188, _theme.scss */
+.comment-form textarea {
+  max-width: 100%;
+}
+
+/* line 190, _theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
-/* line 187, _theme.scss */
+/* line 192, _theme.scss */
 .nav-previous:before {
   content: 'Previous post: ';
 }
 
-/* line 190, _theme.scss */
+/* line 195, _theme.scss */
 .nav-next:before {
   content: 'Next post: ';
 }
@@ -269,124 +279,124 @@ h1 a:hover, h1 a:active {
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 200, _theme.scss */
+/* line 205, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 205, _theme.scss */
+/* line 210, _theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 207, _theme.scss */
+/* line 212, _theme.scss */
 .about-me .about-img {
   text-align: center;
 }
-/* line 209, _theme.scss */
+/* line 214, _theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 218, _theme.scss */
+/* line 223, _theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 222, _theme.scss */
+/* line 227, _theme.scss */
 .tile-content,
 article.post-preview {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1em 10px;
 }
-/* line 226, _theme.scss */
+/* line 231, _theme.scss */
 .tile-content footer,
 article.post-preview footer {
   margin: 1.5rem 0 0;
 }
 
-/* line 228, _theme.scss */
+/* line 233, _theme.scss */
 article.post-preview {
   margin-bottom: 1em;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 237, _theme.scss */
+  /* line 242, _theme.scss */
   .site-header .branding {
     padding: 85px 0 50px;
   }
-  /* line 240, _theme.scss */
+  /* line 245, _theme.scss */
   .site-header h1 {
     font-size: 3.75em;
   }
 
-  /* line 242, _theme.scss */
+  /* line 247, _theme.scss */
   .main-menu {
     width: 100%;
   }
-  /* line 244, _theme.scss */
+  /* line 249, _theme.scss */
   .main-menu .flexnav {
     position: inherit;
   }
-  /* line 246, _theme.scss */
+  /* line 251, _theme.scss */
   .main-menu .flexnav li a {
     border-left: 0;
     border-right: 1px solid #aaa;
   }
 
-  /* line 254, _theme.scss */
+  /* line 259, _theme.scss */
+  .about-img {
+    float: left;
+  }
+
+  /* line 262, _theme.scss */
+  .about-content {
+    float: right;
+    padding-left: 1em;
+  }
+
+  /* line 268, _theme.scss */
   .entry-footer span {
     float: left;
     width: 45%;
   }
 
-  /* line 261, _theme.scss */
+  /* line 275, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 263, _theme.scss */
+  /* line 277, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 265, _theme.scss */
+  /* line 279, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 268, _theme.scss */
+  /* line 282, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 272, _theme.scss */
+  /* line 286, _theme.scss */
   .comments {
     padding: 40px;
   }
-
-  /* line 276, _theme.scss */
-  .about-img {
-    float: left;
-  }
-
-  /* line 279, _theme.scss */
-  .about-content {
-    float: right;
-    padding-left: 1em;
-  }
 }
 @media screen and (min-width: 860px) {
-  /* line 289, _theme.scss */
+  /* line 295, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 293, _theme.scss */
+  /* line 299, _theme.scss */
   .post-tile {
     float: left;
   }

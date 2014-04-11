@@ -169,6 +169,10 @@ h1 {
 .post-wrapper {
     margin: auto;
     max-width: 780px;
+    img[width], img[height] { 
+        max-width: 100%; 
+        height: auto;
+    }
 }
 .entry-footer {
     span {
@@ -181,6 +185,7 @@ h1 {
 .comments {
     padding: 40px 0;
 }
+.comment-form textarea { max-width: 100%; }
 
 .nav-previous{
     margin-bottom: 1rem;
@@ -249,6 +254,15 @@ article.post-preview {
             }
         }
     }
+   
+
+    .about-img {
+        float: left;
+    }
+    .about-content {
+        float: right;
+        padding-left: 1em;
+    }
 
     .entry-footer {
         span {
@@ -256,7 +270,7 @@ article.post-preview {
             width: 45%;
         }
     }
-    
+
     .nav-previous,
     .nav-next {
         width: 45%;
@@ -271,14 +285,6 @@ article.post-preview {
 
     .comments {
         padding: 40px;
-    }
-
-    .about-img {
-        float: left;
-    }
-    .about-content {
-        float: right;
-        padding-left: 1em;
     }
     
 } // Min-width : LAP

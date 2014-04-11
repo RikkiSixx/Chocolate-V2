@@ -9,7 +9,10 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
 
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.6.1.min.js"></script>
+	
 		<?php wp_head(); ?>
+
 	</head>
 
 	<body <?php body_class(); ?>>	
@@ -28,8 +31,11 @@
 				); ?>					
 			</nav>
 
-			<section class="branding text--center">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/motif.png" class="motif" alt="Rik Kendell" />
+			<section class="branding text--center">				 
+
+				<?php if ( is_front_page() ) { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/header-rik.jpg" class="motif" alt="Rik Kendell" />
+				<?php } ?>
 				
 				<h1>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>

@@ -5,58 +5,61 @@ Template Name: Blog Listing Page
 ?>
 <?php get_header(); ?>
 
-<section class="post-listing container" role="main">
+<div class="container">
 
-	<?php
-		// Find posts in 'Projects' post type 
-		$args = array(
-			'post_type' => array('post'),			
-			'posts_per_page' => 6
-		);
+	<section class="recent-posts grid cf" role="main">
 
-		$blogPosts = get_posts( $args );
+		<?php
+			// Find posts in 'Projects' post type 
+			$args = array(
+				'post_type' => array('post'),			
+				'posts_per_page' => 6
+			);
 
-		foreach ( $blogPosts as $post ) : setup_postdata( $post ); 
-	?>
+			$blogPosts = get_posts( $args );
 
-	<article class="post-preview">
-		<header>
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1> 
-		</header>
+			foreach ( $blogPosts as $post ) : setup_postdata( $post ); 
+		?>
 
-		<section>				
-			<div class="post-thumb">	
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php if ( has_post_thumbnail() ) { 
-						the_post_thumbnail('thumbnail'); 
-					} else { ?>
-						<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
-					<?php } ?>
-				</a>
-			</div>	
+		<article class="grid__item desk-one-third post-tile">
+			<div class="container tile-content">
 
-			<?php the_excerpt(); ?>
+				<?php edit_post_link(); ?>
 
-			<div class="entry-links">
-				<?php wp_link_pages(); ?>
-			</div>
+				<header>
+					<div class="post-thumb">	
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php if ( has_post_thumbnail() ) { 
+								the_post_thumbnail('thumbnail'); 
+							} else { ?>
+								<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
+							<?php } ?>
+						</a>
+					</div>	
 
-			<?php edit_post_link(); ?>
-		</section>
+					<h1 class="equal-title">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h1> 
+				</header>
 
-		<footer class="cf">
-			<p><?php the_tags( $before, ', '. $after ); ?></p>
-			<p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></p>
-		</footer>
+				<section class="equal-height">		
+					<?php the_excerpt(); ?>
+				</section>
 
-	</article>
+				<footer class="cf">	
+					<span class="tags" style="float: left;"><?php the_tags( 'Tags: ', ', '. $after ); ?></span>
+					<span class="read-more" style="float:right;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></span>
+				</footer>	
 
-	<?php endforeach; 
-	wp_reset_postdata();?>
+			</div><!-- .tile-content -->
+		</article>
 
-</section>
+		<?php endforeach; 
+		wp_reset_postdata();?>
+
+	</section>
+
+</div>
 
 <?php // get_sidebar(); ?>
 

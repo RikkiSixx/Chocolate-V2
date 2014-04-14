@@ -363,40 +363,51 @@ article.post-preview {
     width: 45%;
   }
 
-  /* line 275, _theme.scss */
+  /* line 274, _theme.scss */
+  .tile-content {
+    position: relative;
+  }
+  /* line 277, _theme.scss */
+  .tile-content .post-edit-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* line 285, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 277, _theme.scss */
+  /* line 287, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 279, _theme.scss */
+  /* line 289, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 282, _theme.scss */
+  /* line 292, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 286, _theme.scss */
+  /* line 296, _theme.scss */
   .comments {
     padding: 40px;
   }
 }
 @media screen and (min-width: 860px) {
-  /* line 295, _theme.scss */
+  /* line 305, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 299, _theme.scss */
+  /* line 309, _theme.scss */
   .post-tile {
     float: left;
   }

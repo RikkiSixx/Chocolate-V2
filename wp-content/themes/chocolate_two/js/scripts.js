@@ -45,26 +45,26 @@ jQuery(document).ready(function($){
 
 		var displayMobile = function() {
 			state = 'mobile';
-			console.log('enter mobile');
+
 			clearheight('.recent-posts .equal-title');
 			clearheight('.recent-posts .equal-height');
 		};
 
 		var displayDesktop = function() {
 			state = 'desktop';
-			console.log('enter desktop');
+			
 			$('.recent-posts .equal-title').equalHeights();
 			$('.recent-posts .equal-height').equalHeights();
 		};
 
 		var resizeMobile = function() {
-			console.log('Resizing mobile');
+
 			clearheight('.recent-posts .equal-title');
 			clearheight('.recent-posts .equal-height');
 		};
 
 		var resizeDesktop = function() {
-			console.log('Resizing desktop');
+
 			$('.recent-posts .equal-title').equalHeights();
 			$('.recent-posts .equal-height').equalHeights();
 		};

@@ -270,6 +270,16 @@ article.post-preview {
             width: 45%;
         }
     }
+    
+    .tile-content {
+        position: relative;
+            
+        .post-edit-link { 
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
 
     .nav-previous,
     .nav-next {

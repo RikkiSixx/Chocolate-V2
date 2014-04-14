@@ -25,6 +25,8 @@ Template Name: Home Page
 
 			<div class="container tile-content">
 
+				<?php edit_post_link(); ?>
+
 				<header>
 					<div class="post-thumb">	
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -44,11 +46,8 @@ Template Name: Home Page
 					<?php the_excerpt(); ?>
 				</section>	
 
-				<footer class="cf">					
-
+				<footer class="cf">	
 					<span class="read-more" style="float:right;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></span>
-
-					<?php edit_post_link(); ?>
 				</footer>			
 			</div><!-- .tile-content -->
 

@@ -45,9 +45,6 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		
 	}
 
-function theme_favicon() {
-	echo '<link rel="shortcut icon" href="' . get_template_directory_uri() . '/img/favicon.ico">';
-}
 
 add_action( 'wp_enqueue_scripts', 'chocolate_enqueue_scripts' );
 	function chocolate_enqueue_scripts() {
@@ -56,12 +53,10 @@ add_action( 'wp_enqueue_scripts', 'chocolate_enqueue_scripts' );
 			wp_deregister_script( 'jquery' );
 		}
 
-
 		$jqueryScript = 'http'. ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . '://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';
 	    wp_register_script('jquery', $jqueryScript, false, '1.10.2', true);
 	    wp_enqueue_script('jquery');
 	}
-
 
 
 add_action( 'comment_form_before', 'chocolate_enqueue_comment_reply_script' );
@@ -216,7 +211,6 @@ function chocolate_taxonomies_init() {
 	);
 	*/
 }
-
 
 
 require get_template_directory() . '/inc/template-tags.php'; // Custom template tags for this theme.

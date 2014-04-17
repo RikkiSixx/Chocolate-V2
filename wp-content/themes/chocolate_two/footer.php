@@ -3,6 +3,8 @@
 
 		<footer class="site-footer" role="contentinfo">
 
+			<?php $options = get_option('chocolate_two_theme_options'); ?>
+
 			<ul class="social-links">
 				<li><a href="http://www.twitter.com/<?php echo $options["social_twitter"]; ?>" title="Follow on Twitter">Twitter</a></li>
 				<li><a href="<?php echo $options["social_linkedin"]; ?>" title="Connect on LinkedIn">LinkedIn</a></li>

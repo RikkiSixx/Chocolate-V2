@@ -50,11 +50,11 @@ function get_theme_options_value( $key ) {
 
 function get_theme_options_default() {
 	$default_options = array(
-		'seo_meta_desc' => '',
-		'social_twitter' => '',
-		'social_linkedin' => '',
 		'phone_number' => '',
-		'contact_email' => ''
+		'contact_email' => '',
+		'social_linkedin' => '',
+		'social_twitter' => '',
+		'social_instagram' => ''
 	);
 	return $default_options;
 }
@@ -62,11 +62,12 @@ function get_theme_options_default() {
 function theme_options_validate( $input ) {
 	$valid_options = get_theme_options_array();
 	$default_options = get_theme_options_default();
-	$valid_options['seo_meta_desc'] = wp_filter_nohtml_kses( $input['seo_meta_desc'] );	
-	$valid_options['social_twitter'] = wp_filter_nohtml_kses( $input['social_twitter'] );	
-	$valid_options['social_linkedin'] = wp_filter_nohtml_kses( $input['social_linkedin'] );
 	$valid_options['phone_number'] = wp_filter_nohtml_kses( $input['phone_number'] );
 	$valid_options['contact_email'] = wp_filter_nohtml_kses( $input['contact_email'] );
+
+	$valid_options['social_linkedin'] = wp_filter_nohtml_kses( $input['social_linkedin'] );
+	$valid_options['social_twitter'] = wp_filter_nohtml_kses( $input['social_twitter'] );	
+	$valid_options['social_instagram'] = wp_filter_nohtml_kses( $input['social_instagram'] );
 	return $valid_options;
 }
 
@@ -89,39 +90,6 @@ function theme_options_render_page() {
 			?>
 
 
-
-			<h3><?php _e( 'SEO', THEME_SLUG ); ?></h3>
-			<table class="form-table">							
-				
-				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[seo_meta_desc]"><?php _e( 'Meta Description', THEME_SLUG ); ?></label></th>
-					<td>
-						<textarea id="<?php echo THEME_SLUG; ?>_theme_options[seo_meta_desc]" class="regular-text" cols="40" rows="5" name="<?php echo THEME_SLUG; ?>_theme_options[seo_meta_desc]" value="<?php esc_attr_e( $options['seo_meta_desc'] ); ?>"></textarea>
-					</td>
-				</tr>				
-			
-			</table>
-
-
-			
-			<h3><?php _e( 'Social Media', THEME_SLUG ); ?></h3>
-			<table class="form-table">							
-				
-				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]"><?php _e( 'Twitter URL', THEME_SLUG ); ?></label></th>
-					<td>
-						<input id="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]" class="regular-text" type="text" name="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]" value="<?php esc_attr_e( $options['social_twitter'] ); ?>" />
-					</td>
-				</tr>
-				
-				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]"><?php _e( 'LinkedIn URL', THEME_SLUG ); ?></label></th>
-					<td>
-						<input id="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]" class="regular-text" type="text" name="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]" value="<?php esc_attr_e( $options['social_linkedin'] ); ?>" />
-					</td>
-				</tr>
-	
-			</table>
-
-
-			
 			<h3><?php _e( 'Contact Information', THEME_SLUG ); ?></h3>
 			<table class="form-table">			
 				
@@ -139,9 +107,40 @@ function theme_options_render_page() {
 					</td>
 				</tr>			
 				
+				
+
 			</table>
 
 			<?php submit_button(); ?>
+
+
+
+			
+			<h3><?php _e( 'Social Media', THEME_SLUG ); ?></h3>
+			<table class="form-table">			
+				
+				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]"><?php _e( 'LinkedIn URL', THEME_SLUG ); ?></label></th>
+					<td>
+						<input id="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]" class="regular-text" type="text" name="<?php echo THEME_SLUG; ?>_theme_options[social_linkedin]" value="<?php esc_attr_e( $options['social_linkedin'] ); ?>" />
+					</td>
+				</tr>
+				
+				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]"><?php _e( 'Twitter URL', THEME_SLUG ); ?></label></th>
+					<td>
+						<input id="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]" class="regular-text" type="text" name="<?php echo THEME_SLUG; ?>_theme_options[social_twitter]" value="<?php esc_attr_e( $options['social_twitter'] ); ?>" />
+					</td>
+				</tr>
+				
+				<tr valign="top"><th scope="row"><label for="<?php echo THEME_SLUG; ?>_theme_options[social_instagram]"><?php _e( 'Instagram URL', THEME_SLUG ); ?></label></th>
+					<td>
+						<input id="<?php echo THEME_SLUG; ?>_theme_options[social_instagram]" class="regular-text" type="text" name="<?php echo THEME_SLUG; ?>_theme_options[social_instagram]" value="<?php esc_attr_e( $options['social_instagram'] ); ?>" />
+					</td>
+				</tr>
+	
+			</table>
+
+			<?php submit_button(); ?>
+			
 			
 		</form>
 	</div>

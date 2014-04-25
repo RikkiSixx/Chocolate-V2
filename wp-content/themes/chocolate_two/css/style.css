@@ -206,7 +206,7 @@ h1 a:hover, h1 a:active {
 
 /* line 139, _theme.scss */
 .post-tile {
-  margin: 0 auto 1em;
+  margin: 1em auto;
 }
 
 /* line 144, _theme.scss */

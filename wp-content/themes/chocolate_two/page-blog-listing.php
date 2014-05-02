@@ -5,9 +5,9 @@ Template Name: Blog Listing Page
 ?>
 <?php get_header(); ?>
 
-<div class="container">
+<div class="post-listing container">
 
-	<section class="recent-posts grid cf" role="main">
+	<section class="cf" role="main">
 
 		<?php
 			// Find posts in 'Projects' post type 
@@ -21,38 +21,36 @@ Template Name: Blog Listing Page
 			foreach ( $blogPosts as $post ) : setup_postdata( $post ); 
 		?>
 
-		<article class="grid__item desk-one-third post-tile">
-			<div class="container tile-content">
+		<article class="post-preview">
 
-				<?php edit_post_link(); ?>
+			<?php edit_post_link(); ?>
 
-				<header>
-					<div class="post-thumb">	
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php if ( has_post_thumbnail() ) { 
-								the_post_thumbnail('thumbnail'); 
-							} else { ?>
-								<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
-							<?php } ?>
-						</a>
-					</div>	
+			<header>
+				<div class="post-thumb">	
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php if ( has_post_thumbnail() ) { 
+							the_post_thumbnail('thumbnail'); 
+						} else { ?>
+							<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
+						<?php } ?>
+					</a>
+				</div>	
 
-					<h1 class="equal-title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-					</h1> 
-				</header>
+				<h1>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				</h1> 
+			</header>
 
-				<section class="equal-height">		
-					<?php the_excerpt(); ?>
-				</section>
+			<section>		
+				<?php the_excerpt(); ?>
+			</section>
 
-				<footer class="cf">	
-					<span class="tags" style="float: left;"><?php the_tags( 'Tags: ', ', '. $after ); ?></span>
-					<span class="read-more" style="float:right;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></span>
-				</footer>	
+			<footer class="cf">	
+				<span class="tags"><?php the_tags( 'Tags: ', ', '. $after ); ?></span>
+				<span class="read-more" style="float:right;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></span>
+			</footer>	
 
-			</div><!-- .tile-content -->
-		</article>
+		</article><!-- .post-preview -->
 
 		<?php endforeach; 
 		wp_reset_postdata();?>

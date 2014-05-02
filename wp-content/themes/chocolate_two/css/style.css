@@ -229,49 +229,62 @@ h1 a:hover, h1 a:active {
 /* line 160, _theme.scss */
 .post-thumb {
   border-radius: 75px;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   height: 150px;
   margin: 0 auto 1em;
   overflow: hidden;
   width: 150px;
 }
 
-/* line 169, _theme.scss */
+/* line 170, _theme.scss */
+.tile-content {
+  background: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1em 10px;
+}
+/* line 174, _theme.scss */
+.tile-content footer {
+  margin: 1.5rem 0 0;
+}
+
+/* line 179, _theme.scss */
 .post-wrapper {
   margin: auto;
   max-width: 780px;
 }
-/* line 172, _theme.scss */
+/* line 182, _theme.scss */
 .post-wrapper img[width], .post-wrapper img[height] {
   max-width: 100%;
   height: auto;
 }
 
-/* line 178, _theme.scss */
+/* line 188, _theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 185, _theme.scss */
+/* line 195, _theme.scss */
 .comments {
   padding: 40px 0;
 }
 
-/* line 188, _theme.scss */
+/* line 198, _theme.scss */
 .comment-form textarea {
   max-width: 100%;
 }
 
-/* line 190, _theme.scss */
+/* line 200, _theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
-/* line 192, _theme.scss */
+/* line 202, _theme.scss */
 .nav-previous:before {
   content: 'Previous post: ';
 }
 
-/* line 195, _theme.scss */
+/* line 205, _theme.scss */
 .nav-next:before {
   content: 'Next post: ';
 }
@@ -279,135 +292,124 @@ h1 a:hover, h1 a:active {
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 205, _theme.scss */
+/* line 215, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 210, _theme.scss */
+/* line 220, _theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 212, _theme.scss */
+/* line 222, _theme.scss */
 .about-me .about-img {
   text-align: center;
 }
-/* line 214, _theme.scss */
+/* line 224, _theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 223, _theme.scss */
+/* line 233, _theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 227, _theme.scss */
-.tile-content,
-article.post-preview {
-  background: #fff;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em 10px;
-}
-/* line 231, _theme.scss */
-.tile-content footer,
-article.post-preview footer {
-  margin: 1.5rem 0 0;
-}
-
-/* line 233, _theme.scss */
-article.post-preview {
-  margin-bottom: 1em;
+/* line 237, _theme.scss */
+.post-preview {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 242, _theme.scss */
+  /* line 248, _theme.scss */
   .site-header .branding {
     padding: 85px 0 50px;
   }
-  /* line 245, _theme.scss */
+  /* line 251, _theme.scss */
   .site-header h1 {
     font-size: 3.75em;
   }
 
-  /* line 247, _theme.scss */
+  /* line 253, _theme.scss */
   .main-menu {
     width: 100%;
   }
-  /* line 249, _theme.scss */
+  /* line 255, _theme.scss */
   .main-menu .flexnav {
     position: inherit;
   }
-  /* line 251, _theme.scss */
+  /* line 257, _theme.scss */
   .main-menu .flexnav li a {
     border-left: 0;
     border-right: 1px solid #aaa;
   }
 
-  /* line 259, _theme.scss */
+  /* line 265, _theme.scss */
   .about-img {
     float: left;
   }
 
-  /* line 262, _theme.scss */
+  /* line 268, _theme.scss */
   .about-content {
     float: right;
     padding-left: 1em;
   }
 
-  /* line 268, _theme.scss */
+  /* line 274, _theme.scss */
   .entry-footer span {
     float: left;
     width: 45%;
   }
 
-  /* line 274, _theme.scss */
+  /* line 280, _theme.scss */
   .tile-content {
     position: relative;
   }
-  /* line 277, _theme.scss */
+  /* line 283, _theme.scss */
   .tile-content .post-edit-link {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  /* line 285, _theme.scss */
+  /* line 291, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 287, _theme.scss */
+  /* line 293, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 289, _theme.scss */
+  /* line 295, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 292, _theme.scss */
+  /* line 298, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 296, _theme.scss */
+  /* line 302, _theme.scss */
   .comments {
     padding: 40px;
   }
 }
 @media screen and (min-width: 860px) {
-  /* line 305, _theme.scss */
+  /* line 311, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 309, _theme.scss */
+  /* line 315, _theme.scss */
   .post-tile {
     float: left;
   }

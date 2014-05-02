@@ -21,14 +21,11 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		global $content_width;
 		if ( ! isset( $content_width ) ) $content_width = 640;
 
-		register_nav_menus(
-			array( 'main-menu' => __( 'Main Menu', 'chocolate' ) )
-		);
-
 		// Objects
 		add_action( 'init', 'chocolate_post_types_init' );
 		add_action( 'init', 'chocolate_taxonomies_init' );
 		add_action( 'init', 'chocolate_enqueue_scripts' );
+		add_action( 'init', 'chocolate_register_menus' );
 
 		add_image_size( 'about-thumb', 356, 356, true );
 
@@ -210,6 +207,15 @@ function chocolate_taxonomies_init() {
 		)
 	);
 	*/
+}
+
+function chocolate_register_menus() {
+	register_nav_menus(
+		array(
+			'main-menu' => __( 'Main Menu' ),
+			'foot-menu' => __( 'Footer Menu' )
+		)
+	);
 }
 
 

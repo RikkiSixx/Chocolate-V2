@@ -159,11 +159,21 @@ h1 {
 }
 .post-thumb {
     border-radius: 75px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     height: 150px; 
     margin: 0 auto 1em; 
     overflow: hidden; 
     width: 150px; 
 }
+
+.tile-content {
+    background: #fff;  
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1em 10px;
+    footer { margin: 1.5rem 0 0;}
+}
+
 
 // Blog Posts
 .post-wrapper {
@@ -223,15 +233,11 @@ h1 {
 .post-listing { 
     max-width: 780px;
 }
-.tile-content,
-article.post-preview {
-    background: #fff;  
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    padding: 1em 10px;
-    footer { margin: 1.5rem 0 0;}
-}
-article.post-preview {  
-    margin-bottom: 1em;
+
+.post-preview {  
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
 }
 
 

@@ -102,6 +102,8 @@ h1 {
     }
 } // .site-header
 
+
+
 .main-menu {  
     background: #333;
 
@@ -128,12 +130,21 @@ h1 {
             }
         }
     }
-}
+} // .main-menu
 
 
 .site-footer {
     background: #333;
-    color: #fff;
+    color: #aaa;
+    font-size: 0.9em;
+
+    li {
+        margin-right: 0.6em; 
+    }
+
+    a { color: #fff; 
+        :hover { text-decoration: underline;}
+    }
 }
 
 .post-tile {
@@ -205,6 +216,14 @@ h1 {
     &:before { content: 'Next post: '; }
 }
 
+.btn--themed {
+    background: $support-color;
+    color: #fff;
+    margin: 1em 0;
+    text-shadow: none;
+}
+
+
 
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
@@ -260,7 +279,17 @@ h1 {
             }
         }
     }
-   
+    .site-footer {
+        li {
+            margin-right: 1em;
+        }
+        .foot-nav {
+            float: left;
+        }
+        .copyright {
+            float: right;
+        }
+    }   
 
     .about-img {
         float: left;
@@ -268,6 +297,7 @@ h1 {
     .about-content {
         float: right;
         padding-left: 1em;
+        .btn { float:right; }
     }
 
     .entry-footer {

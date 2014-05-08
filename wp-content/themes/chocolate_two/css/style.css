@@ -166,29 +166,29 @@ h1 a:hover, h1 a:active {
   overflow: hidden;
 }
 
-/* line 105, _theme.scss */
+/* line 107, _theme.scss */
 .main-menu {
   background: #333;
 }
-/* line 108, _theme.scss */
+/* line 110, _theme.scss */
 .main-menu .menu-button {
   background: none;
   color: #fff;
 }
-/* line 113, _theme.scss */
+/* line 115, _theme.scss */
 .main-menu .flexnav {
   position: absolute;
 }
-/* line 115, _theme.scss */
+/* line 117, _theme.scss */
 .main-menu .flexnav li {
   background: #333;
   display: block;
 }
-/* line 119, _theme.scss */
+/* line 121, _theme.scss */
 .main-menu .flexnav li:hover {
   background: #3e3e3e;
 }
-/* line 121, _theme.scss */
+/* line 123, _theme.scss */
 .main-menu .flexnav li a {
   background: none;
   color: #fff;
@@ -198,35 +198,48 @@ h1 a:hover, h1 a:active {
   width: 100%;
 }
 
-/* line 134, _theme.scss */
+/* line 136, _theme.scss */
 .site-footer {
   background: #333;
+  color: #aaa;
+  font-size: 0.9em;
+}
+/* line 141, _theme.scss */
+.site-footer li {
+  margin-right: 0.6em;
+}
+/* line 145, _theme.scss */
+.site-footer a {
   color: #fff;
 }
+/* line 146, _theme.scss */
+.site-footer a :hover {
+  text-decoration: underline;
+}
 
-/* line 139, _theme.scss */
+/* line 150, _theme.scss */
 .post-tile {
   margin: 1em auto;
 }
 
-/* line 144, _theme.scss */
+/* line 155, _theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 148, _theme.scss */
+/* line 159, _theme.scss */
 .sidebar li {
   margin-bottom: 1em;
 }
 
-/* line 154, _theme.scss */
+/* line 165, _theme.scss */
 .post-content img {
   height: auto;
   max-width: 720px;
   width: 100%;
 }
 
-/* line 160, _theme.scss */
+/* line 171, _theme.scss */
 .post-thumb {
   border-radius: 75px;
   border: 2px solid #fff;
@@ -237,87 +250,95 @@ h1 a:hover, h1 a:active {
   width: 150px;
 }
 
-/* line 170, _theme.scss */
+/* line 181, _theme.scss */
 .tile-content {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1em 10px;
 }
-/* line 174, _theme.scss */
+/* line 185, _theme.scss */
 .tile-content footer {
   margin: 1.5rem 0 0;
 }
 
-/* line 179, _theme.scss */
+/* line 190, _theme.scss */
 .post-wrapper {
   margin: auto;
   max-width: 780px;
 }
-/* line 182, _theme.scss */
+/* line 193, _theme.scss */
 .post-wrapper img[width], .post-wrapper img[height] {
   max-width: 100%;
   height: auto;
 }
 
-/* line 188, _theme.scss */
+/* line 199, _theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 195, _theme.scss */
+/* line 206, _theme.scss */
 .comments {
   padding: 40px 0;
 }
 
-/* line 198, _theme.scss */
+/* line 209, _theme.scss */
 .comment-form textarea {
   max-width: 100%;
 }
 
-/* line 200, _theme.scss */
+/* line 211, _theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
-/* line 202, _theme.scss */
+/* line 213, _theme.scss */
 .nav-previous:before {
   content: 'Previous post: ';
 }
 
-/* line 205, _theme.scss */
+/* line 216, _theme.scss */
 .nav-next:before {
   content: 'Next post: ';
+}
+
+/* line 219, _theme.scss */
+.btn--themed {
+  background: #cc0033;
+  color: #fff;
+  margin: 1em 0;
+  text-shadow: none;
 }
 
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 215, _theme.scss */
+/* line 234, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 220, _theme.scss */
+/* line 239, _theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 222, _theme.scss */
+/* line 241, _theme.scss */
 .about-me .about-img {
   text-align: center;
 }
-/* line 224, _theme.scss */
+/* line 243, _theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 233, _theme.scss */
+/* line 252, _theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 237, _theme.scss */
+/* line 256, _theme.scss */
 .post-preview {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
@@ -325,91 +346,108 @@ h1 a:hover, h1 a:active {
 }
 
 @media screen and (min-width: 640px) {
-  /* line 248, _theme.scss */
+  /* line 267, _theme.scss */
   .site-header .branding {
     padding: 85px 0 50px;
   }
-  /* line 251, _theme.scss */
+  /* line 270, _theme.scss */
   .site-header h1 {
     font-size: 3.75em;
   }
 
-  /* line 253, _theme.scss */
+  /* line 272, _theme.scss */
   .main-menu {
     width: 100%;
   }
-  /* line 255, _theme.scss */
+  /* line 274, _theme.scss */
   .main-menu .flexnav {
     position: inherit;
   }
-  /* line 257, _theme.scss */
+  /* line 276, _theme.scss */
   .main-menu .flexnav li a {
     border-left: 0;
     border-right: 1px solid #aaa;
   }
 
-  /* line 265, _theme.scss */
+  /* line 283, _theme.scss */
+  .site-footer li {
+    margin-right: 1em;
+  }
+  /* line 286, _theme.scss */
+  .site-footer .foot-nav {
+    float: left;
+  }
+  /* line 289, _theme.scss */
+  .site-footer .copyright {
+    float: right;
+  }
+
+  /* line 294, _theme.scss */
   .about-img {
     float: left;
   }
 
-  /* line 268, _theme.scss */
+  /* line 297, _theme.scss */
   .about-content {
     float: right;
     padding-left: 1em;
   }
+  /* line 300, _theme.scss */
+  .about-content .btn {
+    float: right;
+  }
 
-  /* line 274, _theme.scss */
+  /* line 304, _theme.scss */
   .entry-footer span {
     float: left;
     width: 45%;
   }
 
-  /* line 280, _theme.scss */
+  /* line 310, _theme.scss */
   .tile-content {
     position: relative;
   }
-  /* line 283, _theme.scss */
+  /* line 313, _theme.scss */
   .tile-content .post-edit-link {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  /* line 291, _theme.scss */
+  /* line 321, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 293, _theme.scss */
+  /* line 323, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 295, _theme.scss */
+  /* line 325, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 298, _theme.scss */
+  /* line 328, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 302, _theme.scss */
+  /* line 332, _theme.scss */
   .comments {
     padding: 40px;
   }
 }
 @media screen and (min-width: 860px) {
-  /* line 311, _theme.scss */
+  /* line 341, _theme.scss */
   .main-menu,
   .search {
     float: left;
   }
 
-  /* line 315, _theme.scss */
+  /* line 345, _theme.scss */
   .post-tile {
     float: left;
   }
@@ -2773,6 +2811,231 @@ label,
 /* line 149, inuit.css/objects/_nav.scss */
 .nav--keywords > li:last-child:after {
   display: none;
+}
+
+/*------------------------------------*\
+    $BEAUTONS.CSS
+\*------------------------------------*/
+/**
+ * beautons is a beautifully simple button toolkit.
+ *
+ * LICENSE
+ * 
+ * Copyright 2013 Harry Roberts
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ * http://apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ */
+/**
+ * 
+ * @csswizardry -- csswizardry.com/beautons
+ * 
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base button styles.
+ *
+ * 1. Allow us to better style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Make buttons inherit font styles.
+ * 5. Force all elements using beautons to appear clickable.
+ * 6. Normalise box model styles.
+ * 7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ */
+/* line 56, inuit.css/objects/_beautons.scss */
+.btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  white-space: nowrap;
+  /* [3] */
+  font-family: inherit;
+  /* [4] */
+  font-size: 100%;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  border: none;
+  /* [6] */
+  margin: 0;
+  /* [6] */
+  padding-top: 0;
+  /* [6] */
+  padding-bottom: 0;
+  /* [6] */
+  line-height: 3;
+  /* [7] */
+  padding-right: 1em;
+  /* [7] */
+  padding-left: 1em;
+  /* [7] */
+  border-radius: 4px;
+  /* [8] */
+}
+
+/* line 76, inuit.css/objects/_beautons.scss */
+.btn, .btn:hover {
+  text-decoration: none;
+  /* [9] */
+}
+/* line 81, inuit.css/objects/_beautons.scss */
+.btn:active, .btn:focus {
+  outline: none;
+}
+
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+/**
+ * Button size modifiers.
+ *
+ * These all follow the same sizing rules as above; text is 1em, space around it
+ * remains uniform.
+ */
+/* line 99, inuit.css/objects/_beautons.scss */
+.btn--small {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2;
+}
+
+/* line 105, inuit.css/objects/_beautons.scss */
+.btn--large {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 4;
+}
+
+/* line 111, inuit.css/objects/_beautons.scss */
+.btn--huge {
+  padding-right: 2em;
+  padding-left: 2em;
+  line-height: 5;
+}
+
+/**
+ * These buttons will fill the entirety of their container.
+ *
+ * 1. Remove padding so that widths and paddings don’t conflict.
+ */
+/* line 122, inuit.css/objects/_beautons.scss */
+.btn--full {
+  width: 100%;
+  padding-right: 0;
+  /* [1] */
+  padding-left: 0;
+  /* [1] */
+  text-align: center;
+}
+
+/*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Button font-size modifiers.
+ */
+/* line 139, inuit.css/objects/_beautons.scss */
+.btn--alpha {
+  font-size: 3rem;
+}
+
+/* line 143, inuit.css/objects/_beautons.scss */
+.btn--beta {
+  font-size: 2rem;
+}
+
+/* line 147, inuit.css/objects/_beautons.scss */
+.btn--gamma {
+  font-size: 1rem;
+}
+
+/**
+ * Make the button inherit sizing from its parent.
+ */
+/* line 154, inuit.css/objects/_beautons.scss */
+.btn--natural {
+  vertical-align: baseline;
+  font-size: inherit;
+  line-height: inherit;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+/*------------------------------------*\
+    $FUNCTIONS
+\*------------------------------------*/
+/**
+ * Button function modifiers.
+ */
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+/* line 179, inuit.css/objects/_beautons.scss */
+.btn--positive {
+  background-color: #4A993E;
+  color: #fff;
+}
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+/* line 187, inuit.css/objects/_beautons.scss */
+.btn--negative {
+  background-color: #b33630;
+  color: #fff;
+}
+
+/**
+ * Inactive, disabled buttons.
+ * 
+ * 1. Make the button look like normal text when hovered.
+ */
+/* line 200, inuit.css/objects/_beautons.scss */
+.btn--inactive,
+.btn--inactive:hover,
+.btn--inactive:active,
+.btn--inactive:focus {
+  background-color: #ddd;
+  color: #777;
+  cursor: text;
+  /* [1] */
+}
+
+/*------------------------------------*\
+    $STYLES
+\*------------------------------------*/
+/**
+ * Button style modifiers.
+ *
+ * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
+ */
+/* line 218, inuit.css/objects/_beautons.scss */
+.btn--soft {
+  border-radius: 200px;
+  /* [1] */
+}
+
+/* line 222, inuit.css/objects/_beautons.scss */
+.btn--hard {
+  border-radius: 0;
 }
 
 /**

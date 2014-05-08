@@ -67,6 +67,8 @@ Template Name: Home Page
 	<div class="container cf">
 		<div class="about-content lap-three-quarters desk-two-thirds">
 			<?php the_content(); ?>
+
+			<a href="mailto:rik.kendell@gmail.com" class="btn btn--themed">Get in touch</a>
 		</div>
 		<div class="about-img lap-one-quarter desk-one-third">
 			<?php if ( has_post_thumbnail() ) { 

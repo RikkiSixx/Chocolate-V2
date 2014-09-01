@@ -166,29 +166,31 @@ h1 a:hover, h1 a:active {
   overflow: hidden;
 }
 
-/* line 107, _theme.scss */
-.main-menu {
+/* line 106, _theme.scss */
+.nav-bar {
+  width: 100%;
   background: #333;
 }
-/* line 110, _theme.scss */
+
+/* line 112, _theme.scss */
 .main-menu .menu-button {
   background: none;
   color: #fff;
 }
-/* line 115, _theme.scss */
+/* line 117, _theme.scss */
 .main-menu .flexnav {
   position: absolute;
 }
-/* line 117, _theme.scss */
+/* line 119, _theme.scss */
 .main-menu .flexnav li {
   background: #333;
   display: block;
 }
-/* line 121, _theme.scss */
+/* line 123, _theme.scss */
 .main-menu .flexnav li:hover {
   background: #3e3e3e;
 }
-/* line 123, _theme.scss */
+/* line 125, _theme.scss */
 .main-menu .flexnav li a {
   background: none;
   color: #fff;
@@ -198,48 +200,48 @@ h1 a:hover, h1 a:active {
   width: 100%;
 }
 
-/* line 136, _theme.scss */
+/* line 138, _theme.scss */
 .site-footer {
   background: #333;
   color: #aaa;
   font-size: 0.9em;
 }
-/* line 141, _theme.scss */
+/* line 143, _theme.scss */
 .site-footer li {
   margin-right: 0.6em;
 }
-/* line 145, _theme.scss */
+/* line 147, _theme.scss */
 .site-footer a {
   color: #fff;
 }
-/* line 146, _theme.scss */
+/* line 148, _theme.scss */
 .site-footer a :hover {
   text-decoration: underline;
 }
 
-/* line 150, _theme.scss */
+/* line 152, _theme.scss */
 .post-tile {
   margin: 1em auto;
 }
 
-/* line 155, _theme.scss */
+/* line 157, _theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 159, _theme.scss */
+/* line 161, _theme.scss */
 .sidebar li {
   margin-bottom: 1em;
 }
 
-/* line 165, _theme.scss */
+/* line 167, _theme.scss */
 .post-content img {
   height: auto;
   max-width: 720px;
   width: 100%;
 }
 
-/* line 171, _theme.scss */
+/* line 173, _theme.scss */
 .post-thumb {
   border-radius: 75px;
   border: 2px solid #fff;
@@ -250,59 +252,59 @@ h1 a:hover, h1 a:active {
   width: 150px;
 }
 
-/* line 181, _theme.scss */
+/* line 183, _theme.scss */
 .tile-content {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1em 10px;
 }
-/* line 185, _theme.scss */
+/* line 187, _theme.scss */
 .tile-content footer {
   margin: 1.5rem 0 0;
 }
 
-/* line 190, _theme.scss */
+/* line 192, _theme.scss */
 .post-wrapper {
   margin: auto;
   max-width: 780px;
 }
-/* line 193, _theme.scss */
+/* line 195, _theme.scss */
 .post-wrapper img[width], .post-wrapper img[height] {
   max-width: 100%;
   height: auto;
 }
 
-/* line 199, _theme.scss */
+/* line 201, _theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 206, _theme.scss */
+/* line 208, _theme.scss */
 .comments {
   padding: 40px 0;
 }
 
-/* line 209, _theme.scss */
+/* line 211, _theme.scss */
 .comment-form textarea {
   max-width: 100%;
 }
 
-/* line 211, _theme.scss */
+/* line 213, _theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
-/* line 213, _theme.scss */
+/* line 215, _theme.scss */
 .nav-previous:before {
   content: 'Previous post: ';
 }
 
-/* line 216, _theme.scss */
+/* line 218, _theme.scss */
 .nav-next:before {
   content: 'Next post: ';
 }
 
-/* line 219, _theme.scss */
+/* line 221, _theme.scss */
 .btn--themed {
   background: #cc0033;
   color: #fff;
@@ -313,32 +315,32 @@ h1 a:hover, h1 a:active {
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 234, _theme.scss */
+/* line 236, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
 
-/* line 239, _theme.scss */
+/* line 241, _theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 241, _theme.scss */
+/* line 243, _theme.scss */
 .about-me .about-img {
   text-align: center;
 }
-/* line 243, _theme.scss */
+/* line 245, _theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 252, _theme.scss */
+/* line 254, _theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 256, _theme.scss */
+/* line 258, _theme.scss */
 .post-preview {
   border-bottom: 1px solid #ccc;
   margin-bottom: 3em;
@@ -346,108 +348,112 @@ h1 a:hover, h1 a:active {
 }
 
 @media screen and (min-width: 640px) {
-  /* line 267, _theme.scss */
+  /* line 269, _theme.scss */
   .site-header .branding {
     padding: 85px 0 50px;
   }
-  /* line 270, _theme.scss */
+  /* line 272, _theme.scss */
   .site-header h1 {
     font-size: 3.75em;
   }
 
-  /* line 272, _theme.scss */
-  .main-menu {
-    width: 100%;
-  }
   /* line 274, _theme.scss */
+  .main-menu {
+    margin: auto;
+    max-width: 1100px;
+  }
+  /* line 277, _theme.scss */
   .main-menu .flexnav {
     position: inherit;
   }
-  /* line 276, _theme.scss */
+  /* line 279, _theme.scss */
   .main-menu .flexnav li a {
     border-left: 0;
     border-right: 1px solid #aaa;
   }
-
   /* line 283, _theme.scss */
+  .main-menu .flexnav li:first-child a {
+    border-left: 1px solid #aaa;
+  }
+
+  /* line 289, _theme.scss */
   .site-footer li {
     margin-right: 1em;
   }
-  /* line 286, _theme.scss */
+  /* line 292, _theme.scss */
   .site-footer .foot-nav {
     float: left;
   }
-  /* line 289, _theme.scss */
+  /* line 295, _theme.scss */
   .site-footer .copyright {
     float: right;
   }
 
-  /* line 294, _theme.scss */
+  /* line 300, _theme.scss */
   .about-img {
     float: left;
   }
 
-  /* line 297, _theme.scss */
+  /* line 303, _theme.scss */
   .about-content {
     float: right;
     padding-left: 1em;
   }
-  /* line 300, _theme.scss */
+  /* line 306, _theme.scss */
   .about-content .btn {
     float: right;
   }
 
-  /* line 304, _theme.scss */
+  /* line 310, _theme.scss */
   .entry-footer span {
     float: left;
     width: 45%;
   }
 
-  /* line 310, _theme.scss */
+  /* line 316, _theme.scss */
   .tile-content {
     position: relative;
   }
-  /* line 313, _theme.scss */
+  /* line 319, _theme.scss */
   .tile-content .post-edit-link {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  /* line 321, _theme.scss */
+  /* line 327, _theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 323, _theme.scss */
+  /* line 329, _theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 
-  /* line 325, _theme.scss */
+  /* line 331, _theme.scss */
   .nav-previous {
     float: left;
   }
 
-  /* line 328, _theme.scss */
+  /* line 334, _theme.scss */
   .nav-next {
     float: right;
   }
 
-  /* line 332, _theme.scss */
+  /* line 338, _theme.scss */
   .comments {
     padding: 40px;
   }
 }
 @media screen and (min-width: 860px) {
-  /* line 341, _theme.scss */
-  .main-menu,
+  /* line 346, _theme.scss */
   .search {
     float: left;
   }
 
-  /* line 345, _theme.scss */
+  /* line 350, _theme.scss */
   .post-tile {
     float: left;
   }

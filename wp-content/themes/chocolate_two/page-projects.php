@@ -5,43 +5,50 @@ Template Name: Projects Page
 ?>
 <?php get_header(); ?>
 
-<section role="main">
+<div class="container">
 
-	<?php
-		// Find posts in 'Projects' post type 
-		$args = array(
-			'post_type' => array('project'),			
-			'posts_per_page' => 6
-		);
+	<section class="cf" role="main">
 
-		$projectPosts = get_posts( $args );
+		<?php
+			// Find posts in 'Projects' post type 
+			$args = array(
+				'post_type' => array('project'),			
+				'posts_per_page' => 6
+			);
 
-		foreach ( $projectPosts as $post ) : setup_postdata( $post ); 
-	?>
+			$projectPosts = get_posts( $args );
 
-	<article <?php post_class(); ?>>
-		<header class="header">
-			<h1 class="entry-title"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
-		</header>
+			foreach ( $projectPosts as $post ) : setup_postdata( $post ); 
+		?>
 
-		<section class="entry-content">
-			<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', THEME_SLUG ), 'after' => '</div>' ) ); ?>
-			
-			<div class="entry-links">
-				<?php wp_link_pages(); ?>
+		<article <?php post_class('post-tile one-whole'); ?>>
+			<div class="container tile-content">
+
+				<header class="header">
+					<h1 class="entry-title">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h1> 
+					<?php edit_post_link(); ?>
+				</header>
+
+				<section class="entry-content">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+					<?php the_excerpt(); ?>
+					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', THEME_SLUG ), 'after' => '</div>' ) ); ?>
+					
+					<div class="entry-links">
+						<?php wp_link_pages(); ?>
+					</div>
+				</section>
+
 			</div>
-		</section>
+		</article>
 
-	</article>
+		<?php endforeach; 
+		wp_reset_postdata();?>
 
-	<?php endforeach; 
-	wp_reset_postdata();?>
+	</section>
 
-</section>
-
-
-<?php get_sidebar(); ?>
+</div><!-- .container -->
 
 <?php get_footer(); ?>

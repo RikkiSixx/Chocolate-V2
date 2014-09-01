@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
 <section id="content" role="main">
+
+	<?php
+		global $wp_query;
+		$args = array_merge( $wp_query->query, array( 'post_type' => array('post', 'project'), 'showposts' => 10000 ) );
+		query_posts( $args ); 
+	?>
+
 	<?php if ( have_posts() ) : ?>
 		<header class="header">
 			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'chocolate' ), get_search_query() ); ?></h1>

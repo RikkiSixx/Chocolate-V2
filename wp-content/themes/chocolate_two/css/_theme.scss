@@ -103,9 +103,11 @@ h1 {
 } // .site-header
 
 
-
-.main-menu {  
+.nav-bar {
+    width: 100%;
     background: #333;
+}
+.main-menu {     
 
     .menu-button { 
         background: none; 
@@ -269,13 +271,17 @@ h1 {
         }
         h1 { font-size: 3.75em; }
     }
-    .main-menu {
-        width: 100%;
+    .main-menu {        
+        margin: auto;
+        max-width: 1100px;
         .flexnav { 
             position: inherit; 
             li a { 
                 border-left: 0;
                 border-right: 1px solid #aaa;
+            }
+            li:first-child a {
+                border-left: 1px solid #aaa;
             }
         }
     }
@@ -336,8 +342,7 @@ h1 {
 } // Min-width : LAP
 
 @media screen and (min-width: $desk-start) {
-
-    .main-menu, 
+ 
     .search {
         float: left;
     }

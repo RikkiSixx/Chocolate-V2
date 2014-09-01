@@ -1,0 +1,25 @@
+/* TEAM */
+                            
+Your title: Rik Kendell
+                            
+Site: http://www.rikkendell.co.uk/
+                            
+Twitter: @Rikki_Sixx
+
+Location: Leeds, UK
+
+                         							
+/* THANKS */
+
+Name:
+
+
+/* SITE */
+                           
+Last update: 2014/05/01 
+                            
+Standards: HTML5, CSS3
+                            
+Components: WordPress, Modernizr, jQuery.
+                            
+Software: Sublime Text 2, Adobe Photoshop CS6.

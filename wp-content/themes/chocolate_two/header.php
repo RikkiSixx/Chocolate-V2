@@ -25,16 +25,18 @@
 
 		<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
 			
-			<nav class="main-menu" role="navigation">
-				<div class="menu-button">Menu</div>
-				<?php wp_nav_menu( 
-					array( 
-						'theme_location' => 'main-menu', 
-						'container' => false,
-						'menu_class' => 'nav flexnav'
-					) 
-				); ?>					
-			</nav>
+			<div class="nav-bar cf">
+				<nav class="main-menu" role="navigation">
+					<div class="menu-button">Menu</div>
+					<?php wp_nav_menu( 
+						array( 
+							'theme_location' => 'main-menu', 
+							'container' => false,
+							'menu_class' => 'nav flexnav'
+						) 
+					); ?>					
+				</nav>
+			</div><!-- .nav-bar -->
 
 			<section class="branding text--center">				 
 

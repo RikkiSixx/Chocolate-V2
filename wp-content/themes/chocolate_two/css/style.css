@@ -118,7 +118,7 @@ h1, h2, h3 {
 .container {
   margin: auto;
   max-width: 1100px;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 /* line 71, _theme.scss */
@@ -147,18 +147,30 @@ h1 a:hover, h1 a:active {
 .site-header .branding {
   padding: 25px 0;
 }
-/* line 90, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 87, _theme.scss */
+  .site-header .branding {
+    padding: 85px 0 50px;
+  }
+}
+/* line 93, _theme.scss */
 .site-header h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 2.25em;
   font-weight: normal;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 95, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 93, _theme.scss */
+  .site-header h1 {
+    font-size: 3.75em;
+  }
+}
+/* line 101, _theme.scss */
 .site-header h1 a {
   color: #fff;
 }
-/* line 97, _theme.scss */
+/* line 103, _theme.scss */
 .site-header .motif {
   border: 2px solid #fff;
   border-radius: 75px;
@@ -166,31 +178,48 @@ h1 a:hover, h1 a:active {
   overflow: hidden;
 }
 
-/* line 106, _theme.scss */
+/* line 112, _theme.scss */
 .nav-bar {
   width: 100%;
   background: #333;
 }
 
-/* line 112, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 116, _theme.scss */
+  .main-menu {
+    margin: auto;
+    max-width: 1100px;
+  }
+}
+/* line 122, _theme.scss */
 .main-menu .menu-button {
   background: none;
   color: #fff;
 }
-/* line 117, _theme.scss */
+/* line 127, _theme.scss */
 .main-menu .flexnav {
   position: absolute;
 }
-/* line 119, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 127, _theme.scss */
+  .main-menu .flexnav {
+    position: inherit;
+  }
+  /* line 131, _theme.scss */
+  .main-menu .flexnav li:first-child a {
+    border-left: 1px solid #aaa;
+  }
+}
+/* line 135, _theme.scss */
 .main-menu .flexnav li {
   background: #333;
   display: block;
 }
-/* line 123, _theme.scss */
+/* line 138, _theme.scss */
 .main-menu .flexnav li:hover {
   background: #3e3e3e;
 }
-/* line 125, _theme.scss */
+/* line 139, _theme.scss */
 .main-menu .flexnav li a {
   background: none;
   color: #fff;
@@ -199,49 +228,84 @@ h1 a:hover, h1 a:active {
   padding: 1em;
   width: 100%;
 }
+@media screen and (min-width: 640px) {
+  /* line 139, _theme.scss */
+  .main-menu .flexnav li a {
+    border-left: 0;
+    border-right: 1px solid #aaa;
+  }
+}
 
-/* line 138, _theme.scss */
+/* line 157, _theme.scss */
 .site-footer {
   background: #333;
   color: #aaa;
   font-size: 0.9em;
 }
-/* line 143, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 162, _theme.scss */
+  .site-footer .foot-nav {
+    float: left;
+  }
+  /* line 165, _theme.scss */
+  .site-footer .copyright {
+    float: right;
+  }
+}
+/* line 169, _theme.scss */
 .site-footer li {
   margin-right: 0.6em;
 }
-/* line 147, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 169, _theme.scss */
+  .site-footer li {
+    margin-right: 1em;
+  }
+}
+/* line 175, _theme.scss */
 .site-footer a {
   color: #fff;
 }
-/* line 148, _theme.scss */
+/* line 176, _theme.scss */
 .site-footer a :hover {
   text-decoration: underline;
 }
 
-/* line 152, _theme.scss */
+/* line 180, _theme.scss */
 .post-tile {
   margin: 1em auto;
 }
+@media screen and (min-width: 860px) {
+  /* line 180, _theme.scss */
+  .post-tile {
+    float: left;
+  }
+}
+@media screen and (min-width: 640px) {
+  /* line 185, _theme.scss */
+  .post-tile .read-more {
+    float: right;
+  }
+}
 
-/* line 157, _theme.scss */
+/* line 192, _theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 161, _theme.scss */
+/* line 196, _theme.scss */
 .sidebar li {
   margin-bottom: 1em;
 }
 
-/* line 167, _theme.scss */
+/* line 201, _theme.scss */
 .post-content img {
   height: auto;
   max-width: 720px;
   width: 100%;
 }
 
-/* line 173, _theme.scss */
+/* line 207, _theme.scss */
 .post-thumb {
   border-radius: 75px;
   border: 2px solid #fff;
@@ -252,59 +316,101 @@ h1 a:hover, h1 a:active {
   width: 150px;
 }
 
-/* line 183, _theme.scss */
+/* line 217, _theme.scss */
 .tile-content {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em 10px;
+  padding: 1.5em;
 }
-/* line 187, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 217, _theme.scss */
+  .tile-content {
+    position: relative;
+  }
+  /* line 223, _theme.scss */
+  .tile-content .post-edit-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+/* line 229, _theme.scss */
 .tile-content footer {
   margin: 1.5rem 0 0;
 }
 
-/* line 192, _theme.scss */
+/* line 235, _theme.scss */
 .post-wrapper {
   margin: auto;
   max-width: 780px;
 }
-/* line 195, _theme.scss */
+/* line 238, _theme.scss */
 .post-wrapper img[width], .post-wrapper img[height] {
   max-width: 100%;
   height: auto;
 }
 
-/* line 201, _theme.scss */
+/* line 244, _theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 640px) {
+  /* line 244, _theme.scss */
+  .entry-footer span {
+    float: left;
+    width: 45%;
+  }
+}
 
-/* line 208, _theme.scss */
+/* line 256, _theme.scss */
 .comments {
   padding: 40px 0;
 }
+@media screen and (min-width: 640px) {
+  /* line 256, _theme.scss */
+  .comments {
+    padding: 40px;
+  }
+}
 
-/* line 211, _theme.scss */
+/* line 262, _theme.scss */
 .comment-form textarea {
   max-width: 100%;
 }
 
-/* line 213, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 266, _theme.scss */
+  .nav-previous,
+  .nav-next {
+    width: 45%;
+  }
+  /* line 269, _theme.scss */
+  .nav-previous:before,
+  .nav-next:before {
+    content: '';
+  }
+}
+
+/* line 272, _theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
-/* line 215, _theme.scss */
-.nav-previous:before {
-  content: 'Previous post: ';
+@media screen and (min-width: 640px) {
+  /* line 272, _theme.scss */
+  .nav-previous {
+    float: left;
+  }
 }
 
-/* line 218, _theme.scss */
-.nav-next:before {
-  content: 'Next post: ';
+@media screen and (min-width: 640px) {
+  /* line 278, _theme.scss */
+  .nav-next {
+    float: right;
+  }
 }
 
-/* line 221, _theme.scss */
+/* line 284, _theme.scss */
 .btn--themed {
   background: #cc0033;
   color: #fff;
@@ -312,152 +418,69 @@ h1 a:hover, h1 a:active {
   text-shadow: none;
 }
 
+@media screen and (min-width: 860px) {
+  /* line 292, _theme.scss */
+  .search {
+    float: left;
+  }
+}
+
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 236, _theme.scss */
+/* line 305, _theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
+/* line 309, _theme.scss */
+.recent-posts .tile-content {
+  padding: 1.5em 1em;
+}
 
-/* line 241, _theme.scss */
+/* line 313, _theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 243, _theme.scss */
+/* line 315, _theme.scss */
 .about-me .about-img {
   text-align: center;
 }
-/* line 245, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 315, _theme.scss */
+  .about-me .about-img {
+    float: left;
+  }
+}
+/* line 320, _theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 254, _theme.scss */
-.post-listing {
-  max-width: 780px;
-}
-
-/* line 258, _theme.scss */
-.post-preview {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 3em;
-  padding-bottom: 3em;
-}
-
 @media screen and (min-width: 640px) {
-  /* line 269, _theme.scss */
-  .site-header .branding {
-    padding: 85px 0 50px;
-  }
-  /* line 272, _theme.scss */
-  .site-header h1 {
-    font-size: 3.75em;
-  }
-
-  /* line 274, _theme.scss */
-  .main-menu {
-    margin: auto;
-    max-width: 1100px;
-  }
-  /* line 277, _theme.scss */
-  .main-menu .flexnav {
-    position: inherit;
-  }
-  /* line 279, _theme.scss */
-  .main-menu .flexnav li a {
-    border-left: 0;
-    border-right: 1px solid #aaa;
-  }
-  /* line 283, _theme.scss */
-  .main-menu .flexnav li:first-child a {
-    border-left: 1px solid #aaa;
-  }
-
-  /* line 289, _theme.scss */
-  .site-footer li {
-    margin-right: 1em;
-  }
-  /* line 292, _theme.scss */
-  .site-footer .foot-nav {
-    float: left;
-  }
-  /* line 295, _theme.scss */
-  .site-footer .copyright {
-    float: right;
-  }
-
-  /* line 300, _theme.scss */
-  .about-img {
-    float: left;
-  }
-
-  /* line 303, _theme.scss */
+  /* line 326, _theme.scss */
   .about-content {
     float: right;
     padding-left: 1em;
   }
-  /* line 306, _theme.scss */
+  /* line 330, _theme.scss */
   .about-content .btn {
     float: right;
   }
-
-  /* line 310, _theme.scss */
-  .entry-footer span {
-    float: left;
-    width: 45%;
-  }
-
-  /* line 316, _theme.scss */
-  .tile-content {
-    position: relative;
-  }
-  /* line 319, _theme.scss */
-  .tile-content .post-edit-link {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  /* line 327, _theme.scss */
-  .nav-previous,
-  .nav-next {
-    width: 45%;
-  }
-  /* line 329, _theme.scss */
-  .nav-previous:before,
-  .nav-next:before {
-    content: '';
-  }
-
-  /* line 331, _theme.scss */
-  .nav-previous {
-    float: left;
-  }
-
-  /* line 334, _theme.scss */
-  .nav-next {
-    float: right;
-  }
-
-  /* line 338, _theme.scss */
-  .comments {
-    padding: 40px;
-  }
 }
-@media screen and (min-width: 860px) {
-  /* line 346, _theme.scss */
-  .search {
-    float: left;
-  }
 
-  /* line 350, _theme.scss */
-  .post-tile {
-    float: left;
-  }
+/* line 335, _theme.scss */
+.post-listing {
+  max-width: 780px;
 }
+
+/* line 339, _theme.scss */
+.post-preview {
+  margin-bottom: 3em;
+  width: 100%;
+}
+
 /* Flexnav Base Styles */
 /* line 2, utilities/_flexnav.scss */
 .flexnav {

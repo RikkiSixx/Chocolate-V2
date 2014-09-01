@@ -5,20 +5,20 @@ Template Name: Epic Quest Page
 ?>
 <?php get_header(); ?>
 
-<section class="container" role="main">
+<section role="main">
+	<div class="container">	
+		<?php // Page content
+			if (have_posts()) :
+			while (have_posts()) : the_post(); ?>
+
+				<h1><?php the_title( ); ?></h1>
+
+				<?php the_content(); ?>
+
+		<?php endwhile; endif; ?>
+	</div>
 	
-
-	<?php // Page content
-		if (have_posts()) :
-		while (have_posts()) : the_post(); ?>
-
-			<h1><?php the_title( ); ?></h1>
-
-			<?php the_content(); ?>
-
-	<?php endwhile; endif; ?>
-	
-	<section class="post-wrapper"
+	<section class="post-wrapper">
 
 		<?php
 			// Find 'Quest Level' posts 

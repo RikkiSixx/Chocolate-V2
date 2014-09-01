@@ -55,6 +55,13 @@ jQuery(document).ready(function($){
 			
 			$('.recent-posts .equal-title').equalHeights();
 			$('.recent-posts .equal-height').equalHeights();
+
+			// Sticky Header
+		 	$(window).bind('scroll', function(){
+		    	var top = $(this).scrollTop();
+				
+				$("body").toggleClass("scrolled", top > 120);
+		  	});
 		};
 
 		var resizeMobile = function() {
@@ -79,9 +86,6 @@ jQuery(document).ready(function($){
 	} ());
 
 	stateManager.init();
-
 	// End of State Manager
-
-
 
 });

@@ -79,13 +79,13 @@ h1 {
 
 .site-header {
     background-position: center;
-    background-size: cover;
-    border-top: 4px solid $support-color;
+    background-size: cover;    
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
     .branding { 
         padding: 25px 0;
+        text-align: center;
         @media screen and (min-width: $lap-start) {
             padding: 85px 0 50px;
         }
@@ -110,8 +110,9 @@ h1 {
 
 
 .nav-bar {
-    width: 100%;
+    border-top: 4px solid $support-color;    
     background: #333;
+    width: 100%;
 }
 .main-menu {   
     @media screen and (min-width: $lap-start) {
@@ -341,3 +342,22 @@ h1 {
     width: 100%;
 }
 
+// Epic Quest 
+.quest-item {
+    margin-bottom: 3em;
+}
+.quest-banner {
+    background-color: #666;
+    background-position: center;
+    background-size: cover;
+    border-top: 4px solid $support-color; 
+    border-bottom: 2px solid $support-color; 
+    min-height: 180px;
+    @media screen and (min-width: $lap-start) {
+        min-height: 340px;
+    }
+    h2 {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+}

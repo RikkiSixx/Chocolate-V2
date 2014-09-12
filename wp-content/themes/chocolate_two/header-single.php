@@ -46,36 +46,22 @@
 			</nav>
 		</div><!-- .nav-bar -->
 
-		<?php if ( is_front_page() ) { ?>
+		<?php $thumbUrl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+		<header class="site-header" role="banner" 
+		<?php if (has_post_thumbnail()) { ?>
+			style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>)"
+		<?php } else { ?>style="background-image: url('<?php header_image(); ?>');"><?php } ?>>
 
-			<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
-				<section class="branding">						
-						<img src="<?php echo get_template_directory_uri(); ?>/img/header-rik.jpg" class="motif" alt="Rik Kendell" />					
-					<h1>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-					</h1>
+			<section class="branding">				 
+				
+				<h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+				</h1>
 
-					<?php bloginfo( 'description' ); ?>
-				</section>				
-			</header><!-- .site-header -->
+				<?php bloginfo( 'description' ); ?>
+			</section>
 
-		<?php } else { ?>
-
-			<?php $thumbUrl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-			<header class="site-header" 
-				<?php if (has_post_thumbnail()) { ?> 
-					style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>)" 
-				<?php } else { ?>
-					style="background-image: url('<?php header_image(); ?>');"
-				<?php } ?> 
-			role="banner">
-
-				<section class="branding">
-					<h1><?php the_title(); ?></h1>
-
-				</section>				
-			</header><!-- .site-header -->
-
-		<?php } ?>
+			
+		</header><!-- .site-header -->
 
 		<div class="hfeed">

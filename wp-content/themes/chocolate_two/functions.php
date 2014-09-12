@@ -12,6 +12,7 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 
 		// Library files
 		require_once( THEME_LIBRARY . '/theme-options.php');
+		require_once( THEME_LIBRARY . '/meta-boxes.php');
 
 		load_theme_textdomain( 'chocolate', get_template_directory() . '/languages' );
 

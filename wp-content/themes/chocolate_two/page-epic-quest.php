@@ -5,6 +5,12 @@ Template Name: Epic Quest Page
 ?>
 <?php get_header(); ?>
 
+<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
+	<section class="branding">		
+		<h1><?php the_title(); ?></h1>
+	</section>				
+</header><!-- .site-header -->
+
 <section role="main" class="page-quest">
 	<div class="container">
 		<?php // Page content
@@ -55,7 +61,7 @@ Template Name: Epic Quest Page
 
 		            if ($image_source != '') { 
 		        ?>
-		        <p><em>Image source: <a href="<?php echo $image_source_url; ?>" title="<?php echo $image_source ?>"><?php echo $image_source ?></a></em></p>
+		        <p><em>Image credit: <a href="<?php echo $image_source_url; ?>" title="<?php echo $image_source ?>"><?php echo $image_source ?></a></em></p>
 		        <?php } ?>
 
 		    </section>

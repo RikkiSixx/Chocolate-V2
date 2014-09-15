@@ -6,6 +6,17 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
+<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
+	<section class="branding">						
+			<img src="<?php echo get_template_directory_uri(); ?>/img/header-rik.jpg" class="motif" alt="Rik Kendell" />					
+		<h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+		</h1>
+
+		<?php bloginfo( 'description' ); ?>
+	</section>				
+</header><!-- .site-header -->
+
 <div class="container">
 
 	<section class="recent-posts grid cf" role="main">
@@ -29,12 +40,8 @@ Template Name: Home Page
 
 				<header>
 					<div class="post-thumb">	
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php if ( has_post_thumbnail() ) { 
-								the_post_thumbnail('thumbnail'); 
-							} else { ?>
-								<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
-							<?php } ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">							
+							<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />							
 						</a>
 					</div>
 					<h1 class="equal-title">
@@ -49,9 +56,7 @@ Template Name: Home Page
 				<footer class="cf">	
 					<span class="read-more" style="float:right;"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></span>
 				</footer>			
-			</div><!-- .tile-content -->
-
-			
+			</div><!-- .tile-content -->			
 
 		</article>
 

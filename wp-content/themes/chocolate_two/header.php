@@ -15,6 +15,11 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
 
+		<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/icons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/icons/apple-touch-icon-114x114-precomposed.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/icons/apple-touch-icon-72x72-precomposed.png" />
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/icons/apple-touch-icon-57x57-precomposed.png" />
+
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.6.1.min.js"></script>
 	
 		<?php wp_head(); ?>
@@ -46,36 +51,5 @@
 			</nav>
 		</div><!-- .nav-bar -->
 
-		<?php if ( is_front_page() ) { ?>
-
-			<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
-				<section class="branding">						
-						<img src="<?php echo get_template_directory_uri(); ?>/img/header-rik.jpg" class="motif" alt="Rik Kendell" />					
-					<h1>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'chocolate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-					</h1>
-
-					<?php bloginfo( 'description' ); ?>
-				</section>				
-			</header><!-- .site-header -->
-
-		<?php } else { ?>
-
-			<?php $thumbUrl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-			<header class="site-header" 
-				<?php if (has_post_thumbnail()) { ?> 
-					style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>)" 
-				<?php } else { ?>
-					style="background-image: url('<?php header_image(); ?>');"
-				<?php } ?> 
-			role="banner">
-
-				<section class="branding">
-					<h1><?php the_title(); ?></h1>
-
-				</section>				
-			</header><!-- .site-header -->
-
-		<?php } ?>
 
 		<div class="hfeed">

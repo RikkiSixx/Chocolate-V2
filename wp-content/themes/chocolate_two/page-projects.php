@@ -5,6 +5,12 @@ Template Name: Projects Page
 ?>
 <?php get_header(); ?>
 
+<header class="site-header" role="banner" style="background-image: url('<?php header_image(); ?>');">
+	<section class="branding">			
+		<h1><?php the_title(); ?></h1>
+	</section>				
+</header><!-- .site-header -->
+
 <div class="container">
 
 	<section class="cf" role="main">

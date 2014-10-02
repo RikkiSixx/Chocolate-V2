@@ -160,7 +160,7 @@ function chocolate_post_types_init() {
 				'parent' => __( 'Parent Quest Level', THEME_SLUG  )				
 			),
 			'description' => __( 'Levels / to-do lists for "Epic Quest" page', THEME_SLUG ),
-			'public' => true,
+			'public' => false,
 			'menu_icon' => 'dashicons-admin-post',
 			'supports' => array( 
 				'title',

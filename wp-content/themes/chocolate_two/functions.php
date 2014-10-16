@@ -29,6 +29,7 @@ add_action( 'after_setup_theme', 'chocolate_setup' );
 		add_action( 'init', 'chocolate_register_menus' );
 
 		add_image_size( 'about-thumb', 356, 356, true );
+		add_image_size( 'post-thumb', 150, 150, true );
 
 
 		//Actions
@@ -241,4 +242,10 @@ function chocolate_comments_number( $count ) {
 	} else {
 		return $count;
 	}
+}
+
+
+add_filter('wpseo_locale', 'override_og_locale');
+function override_og_locale($locale) {
+	return "en_GB";
 }

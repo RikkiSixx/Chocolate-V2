@@ -39,7 +39,7 @@ Template Name: Blog Listing Page
 					<div class="post-thumb">	
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 							<?php if ( has_post_thumbnail() ) { 
-								the_post_thumbnail('thumbnail'); 
+								the_post_thumbnail('post-thumb'); 
 							} else { ?>
 								<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />
 							<?php } ?>

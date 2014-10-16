@@ -78,7 +78,7 @@ CONTENTS - GLOBAL.CSS
 /* ==========================================================================
    1. Base styles
    ========================================================================== */
-/* line 31, _theme.scss */
+/* line 31, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 body {
   background: #f5f5f5;
   color: #383e42;
@@ -87,36 +87,36 @@ body {
 /* ==========================================================================
    2. Base Typography & Links
    ========================================================================== */
-/* line 41, _theme.scss */
+/* line 41, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 46, _theme.scss */
+/* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 a,
 a:visited {
   text-decoration: none;
   color: #cc0033;
 }
 
-/* line 51, _theme.scss */
+/* line 51, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 a:hover,
 a:active {
   text-decoration: underline;
 }
 
-/* line 55, _theme.scss */
+/* line 55, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 blockquote {
   border-left: 4px solid #cc0033;
   font-size: 1.125em;
   font-style: italic;
 }
-/* line 59, _theme.scss */
+/* line 59, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 blockquote p {
   padding-left: 24px;
 }
 
-/* line 63, _theme.scss */
+/* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 code {
   background: #2d2d2d;
   border-radius: 5px;
@@ -129,52 +129,58 @@ code {
 /* ==========================================================================
    3. Global layout & Typography
    ========================================================================== */
-/* line 77, _theme.scss */
+/* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .wrapper {
   margin: auto;
   max-width: 1100px;
 }
 
-/* line 82, _theme.scss */
+/* line 82, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .container {
   margin: auto;
   max-width: 1100px;
   padding: 1.5em;
 }
 
-/* line 88, _theme.scss */
+/* line 88, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 h1 {
   font-weight: 700;
 }
-/* line 90, _theme.scss */
+/* line 90, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 h1 a, h1 a:visited {
   color: #3A3A44;
 }
-/* line 91, _theme.scss */
+/* line 91, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 h1 a:hover, h1 a:active {
   color: #cc0033;
   text-decoration: none;
 }
 
-/* line 97, _theme.scss */
+/* line 97, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-header {
   background-position: center;
   background-size: cover;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 103, _theme.scss */
+/* line 103, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-header .branding {
   padding: 25px 0;
   text-align: center;
 }
 @media screen and (min-width: 640px) {
-  /* line 103, _theme.scss */
+  /* line 103, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .site-header .branding {
     padding: 85px 0 50px;
   }
 }
-/* line 110, _theme.scss */
+@media screen and (min-width: 640px) {
+  /* line 103, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+  .site-header .branding {
+    min-height: 360px;
+  }
+}
+/* line 113, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-header h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 2.25em;
@@ -182,16 +188,16 @@ h1 a:hover, h1 a:active {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 640px) {
-  /* line 110, _theme.scss */
+  /* line 113, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .site-header h1 {
     font-size: 3.75em;
   }
 }
-/* line 118, _theme.scss */
+/* line 121, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-header h1 a {
   color: #fff;
 }
-/* line 120, _theme.scss */
+/* line 123, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-header .motif {
   border: 2px solid #fff;
   border-radius: 75px;
@@ -199,7 +205,7 @@ h1 a:hover, h1 a:active {
   overflow: hidden;
 }
 
-/* line 129, _theme.scss */
+/* line 132, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .nav-bar {
   border-top: 4px solid #cc0033;
   background: #333;
@@ -207,41 +213,41 @@ h1 a:hover, h1 a:active {
 }
 
 @media screen and (min-width: 640px) {
-  /* line 134, _theme.scss */
+  /* line 137, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .main-menu {
     margin: auto;
     max-width: 1100px;
   }
 }
-/* line 140, _theme.scss */
+/* line 143, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .main-menu .menu-button {
   background: none;
   color: #fff;
 }
-/* line 145, _theme.scss */
+/* line 148, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .main-menu .flexnav {
   position: absolute;
 }
 @media screen and (min-width: 640px) {
-  /* line 145, _theme.scss */
+  /* line 148, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .main-menu .flexnav {
     position: inherit;
   }
-  /* line 149, _theme.scss */
+  /* line 152, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .main-menu .flexnav li:first-child a {
     border-left: 1px solid #aaa;
   }
 }
-/* line 153, _theme.scss */
+/* line 156, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .main-menu .flexnav li {
   background: #333;
   display: block;
 }
-/* line 156, _theme.scss */
+/* line 159, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .main-menu .flexnav li:hover {
   background: #3e3e3e;
 }
-/* line 157, _theme.scss */
+/* line 160, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .main-menu .flexnav li a {
   background: none;
   color: #fff;
@@ -251,83 +257,83 @@ h1 a:hover, h1 a:active {
   width: 100%;
 }
 @media screen and (min-width: 640px) {
-  /* line 157, _theme.scss */
+  /* line 160, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .main-menu .flexnav li a {
     border-left: 0;
     border-right: 1px solid #aaa;
   }
 }
 
-/* line 175, _theme.scss */
+/* line 178, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-footer {
   background: #333;
   color: #aaa;
   font-size: 0.9em;
 }
 @media screen and (min-width: 640px) {
-  /* line 180, _theme.scss */
+  /* line 183, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .site-footer .foot-nav {
     float: left;
   }
-  /* line 183, _theme.scss */
+  /* line 186, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .site-footer .copyright {
     float: right;
   }
 }
-/* line 187, _theme.scss */
+/* line 190, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-footer li {
   margin-right: 0.6em;
 }
 @media screen and (min-width: 640px) {
-  /* line 187, _theme.scss */
+  /* line 190, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .site-footer li {
     margin-right: 1em;
   }
 }
-/* line 193, _theme.scss */
+/* line 196, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-footer a {
   color: #fff;
 }
-/* line 194, _theme.scss */
+/* line 197, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .site-footer a :hover {
   text-decoration: underline;
 }
 
-/* line 198, _theme.scss */
+/* line 201, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-tile {
   margin: 1em auto;
 }
 @media screen and (min-width: 860px) {
-  /* line 198, _theme.scss */
+  /* line 201, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .post-tile {
     float: left;
   }
 }
 @media screen and (min-width: 640px) {
-  /* line 203, _theme.scss */
+  /* line 206, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .post-tile .read-more {
     float: right;
   }
 }
 
-/* line 210, _theme.scss */
+/* line 213, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .sidebar ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 214, _theme.scss */
+/* line 217, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .sidebar li {
   margin-bottom: 1em;
 }
 
-/* line 219, _theme.scss */
+/* line 222, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-content img {
   height: auto;
   max-width: 720px;
   width: 100%;
 }
 
-/* line 225, _theme.scss */
+/* line 228, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-thumb {
   border-radius: 75px;
   border: 2px solid #fff;
@@ -338,101 +344,115 @@ h1 a:hover, h1 a:active {
   width: 150px;
 }
 
-/* line 235, _theme.scss */
+/* line 238, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .tile-content {
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 1.5em;
 }
 @media screen and (min-width: 640px) {
-  /* line 235, _theme.scss */
+  /* line 238, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .tile-content {
     position: relative;
   }
-  /* line 241, _theme.scss */
+  /* line 244, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .tile-content .post-edit-link {
     position: absolute;
     right: 0;
     top: 0;
   }
 }
-/* line 247, _theme.scss */
+/* line 250, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .tile-content footer {
   margin: 1.5rem 0 0;
 }
 
-/* line 253, _theme.scss */
+/* line 256, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-wrapper {
   margin: auto;
   max-width: 780px;
 }
-/* line 256, _theme.scss */
+/* line 259, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-wrapper img[width], .post-wrapper img[height] {
   max-width: 100%;
   height: auto;
 }
 
-/* line 262, _theme.scss */
+/* line 265, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .entry-footer span {
   display: block;
   margin-bottom: 1.5rem;
 }
-@media screen and (min-width: 640px) {
-  /* line 262, _theme.scss */
-  .entry-footer span {
-    float: left;
-    width: 45%;
-  }
+
+/* line 272, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+.embed-container {
+  position: relative;
+  padding-bottom: 75%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 278, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+.embed-container.widescreen {
+  padding-bottom: 56.25%;
+}
+/* line 281, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 274, _theme.scss */
+/* line 291, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .comments {
   padding: 40px 0;
 }
 @media screen and (min-width: 640px) {
-  /* line 274, _theme.scss */
+  /* line 291, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .comments {
     padding: 40px;
   }
 }
 
-/* line 280, _theme.scss */
+/* line 297, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .comment-form textarea {
   max-width: 100%;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 284, _theme.scss */
+  /* line 300, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .nav-previous,
   .nav-next {
     width: 45%;
   }
-  /* line 287, _theme.scss */
+  /* line 303, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .nav-previous:before,
   .nav-next:before {
     content: '';
   }
 }
 
-/* line 290, _theme.scss */
+/* line 306, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .nav-previous {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 640px) {
-  /* line 290, _theme.scss */
+  /* line 306, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .nav-previous {
     float: left;
   }
 }
 
 @media screen and (min-width: 640px) {
-  /* line 296, _theme.scss */
+  /* line 312, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .nav-next {
     float: right;
   }
 }
 
-/* line 302, _theme.scss */
+/* line 318, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .btn--themed {
   background: #cc0033;
   color: #fff;
@@ -441,7 +461,7 @@ h1 a:hover, h1 a:active {
 }
 
 @media screen and (min-width: 860px) {
-  /* line 310, _theme.scss */
+  /* line 326, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .search {
     float: left;
   }
@@ -450,65 +470,65 @@ h1 a:hover, h1 a:active {
 /* ==========================================================================
    4. Custom layout - Page specific, media queries, etc.
    ========================================================================== */
-/* line 323, _theme.scss */
+/* line 339, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .recent-posts h1 {
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 327, _theme.scss */
+/* line 343, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .recent-posts .tile-content {
   padding: 1.5em 1em;
 }
 
-/* line 331, _theme.scss */
+/* line 347, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .about-me {
   background: #fff;
 }
-/* line 333, _theme.scss */
+/* line 349, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .about-me .about-img {
   text-align: center;
 }
 @media screen and (min-width: 640px) {
-  /* line 333, _theme.scss */
+  /* line 349, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .about-me .about-img {
     float: left;
   }
 }
-/* line 338, _theme.scss */
+/* line 354, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .about-me .about-img img {
   width: 100%;
   height: auto;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 344, _theme.scss */
+  /* line 360, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .about-content {
     float: right;
     padding-left: 1em;
   }
-  /* line 348, _theme.scss */
+  /* line 364, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .about-content .btn {
     float: right;
   }
 }
 
-/* line 353, _theme.scss */
+/* line 369, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-listing {
   max-width: 780px;
 }
 
-/* line 357, _theme.scss */
+/* line 373, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .post-preview {
   margin-bottom: 3em;
   width: 100%;
 }
 
-/* line 363, _theme.scss */
+/* line 379, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .quest-item {
   margin-bottom: 3em;
 }
 
-/* line 366, _theme.scss */
+/* line 382, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .quest-banner {
   background-color: #666;
   background-position: center;
@@ -518,19 +538,19 @@ h1 a:hover, h1 a:active {
   min-height: 180px;
 }
 @media screen and (min-width: 640px) {
-  /* line 366, _theme.scss */
+  /* line 382, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
   .quest-banner {
     min-height: 340px;
   }
 }
-/* line 376, _theme.scss */
+/* line 392, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/_theme.scss */
 .quest-banner h2 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
 /* Flexnav Base Styles */
-/* line 2, utilities/_flexnav.scss */
+/* line 2, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav {
   -webkit-transition: none;
   -moz-transition: none;
@@ -543,12 +563,12 @@ h1 a:hover, h1 a:active {
   max-height: 0;
 }
 
-/* line 12, utilities/_flexnav.scss */
+/* line 12, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav.opacity {
   opacity: 0;
 }
 
-/* line 14, utilities/_flexnav.scss */
+/* line 14, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav.flexnav-show {
   max-height: 2000px;
   opacity: 1;
@@ -558,7 +578,7 @@ h1 a:hover, h1 a:active {
   transition: all .5s ease-in-out;
 }
 
-/* line 21, utilities/_flexnav.scss */
+/* line 21, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav.one-page {
   position: fixed;
   top: 50px;
@@ -566,14 +586,14 @@ h1 a:hover, h1 a:active {
   max-width: 200px;
 }
 
-/* line 26, utilities/_flexnav.scss */
+/* line 26, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li {
   font-size: 100%;
   position: relative;
   overflow: hidden;
 }
 
-/* line 30, utilities/_flexnav.scss */
+/* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li a {
   position: relative;
   display: block;
@@ -585,40 +605,40 @@ h1 a:hover, h1 a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-/* line 39, utilities/_flexnav.scss */
+/* line 39, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li ul {
   width: 100%;
 }
 
-/* line 41, utilities/_flexnav.scss */
+/* line 41, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li ul li {
   font-size: 100%;
   position: relative;
   overflow: hidden;
 }
 
-/* line 45, utilities/_flexnav.scss */
+/* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li ul.flexnav-show li {
   overflow: visible;
 }
 
-/* line 47, utilities/_flexnav.scss */
+/* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav li ul li a {
   display: block;
   background: #b2b2af;
 }
 
-/* line 50, utilities/_flexnav.scss */
+/* line 50, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav ul li ul li a {
   background: #bfbfbc;
 }
 
-/* line 52, utilities/_flexnav.scss */
+/* line 52, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav ul li ul li ul li a {
   background: #cbcbc9;
 }
 
-/* line 54, utilities/_flexnav.scss */
+/* line 54, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav .touch-button {
   position: absolute;
   z-index: 999;
@@ -632,12 +652,12 @@ h1 a:hover, h1 a:active {
   text-align: center;
 }
 
-/* line 65, utilities/_flexnav.scss */
+/* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav .touch-button:hover {
   cursor: pointer;
 }
 
-/* line 67, utilities/_flexnav.scss */
+/* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .flexnav .touch-button .navicon {
   position: relative;
   font-size: arial;
@@ -646,7 +666,7 @@ h1 a:hover, h1 a:active {
   color: #666;
 }
 
-/* line 74, utilities/_flexnav.scss */
+/* line 74, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .menu-button {
   position: relative;
   display: block;
@@ -657,7 +677,7 @@ h1 a:hover, h1 a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* line 82, utilities/_flexnav.scss */
+/* line 82, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .menu-button.one-page {
   position: fixed;
   top: 0;
@@ -665,7 +685,7 @@ h1 a:hover, h1 a:active {
   padding-right: 45px;
 }
 
-/* line 87, utilities/_flexnav.scss */
+/* line 87, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .menu-button .touch-button {
   background: transparent;
   position: absolute;
@@ -678,7 +698,7 @@ h1 a:hover, h1 a:active {
   text-align: center;
 }
 
-/* line 97, utilities/_flexnav.scss */
+/* line 97, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .menu-button .touch-button .navicon {
   font-size: 16px;
   position: relative;
@@ -687,29 +707,29 @@ h1 a:hover, h1 a:active {
 }
 
 @media all and (min-width: 800px) {
-  /* line 104, utilities/_flexnav.scss */
+  /* line 104, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   body.one-page {
     padding-top: 70px;
   }
 
-  /* line 108, utilities/_flexnav.scss */
+  /* line 108, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav {
     overflow: visible;
   }
 
-  /* line 111, utilities/_flexnav.scss */
+  /* line 111, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav.opacity {
     opacity: 1;
   }
 
-  /* line 114, utilities/_flexnav.scss */
+  /* line 114, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav.one-page {
     top: 0;
     right: auto;
     max-width: 1080px;
   }
 
-  /* line 119, utilities/_flexnav.scss */
+  /* line 119, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li {
     position: relative;
     list-style: none;
@@ -720,41 +740,41 @@ h1 a:hover, h1 a:active {
     /*width: 20%; */
   }
 
-  /* line 128, utilities/_flexnav.scss */
+  /* line 128, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav .menu-item-has-children {
     padding-right: 50px;
   }
 
-  /* line 131, utilities/_flexnav.scss */
+  /* line 131, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li a {
     border-left: 1px solid #acaca1;
     border-bottom: none;
   }
 
-  /* line 135, utilities/_flexnav.scss */
+  /* line 135, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li > ul {
     position: absolute;
     top: auto;
     left: 0;
   }
 
-  /* line 140, utilities/_flexnav.scss */
+  /* line 140, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li > ul li {
     width: 100%;
   }
 
-  /* line 143, utilities/_flexnav.scss */
+  /* line 143, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li ul li > ul {
     margin-left: 100%;
     top: 0;
   }
 
-  /* line 147, utilities/_flexnav.scss */
+  /* line 147, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li ul li a {
     border-bottom: none;
   }
 
-  /* line 150, utilities/_flexnav.scss */
+  /* line 150, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li ul.open {
     display: block;
     opacity: 1;
@@ -762,41 +782,41 @@ h1 a:hover, h1 a:active {
     z-index: 1;
   }
 
-  /* line 156, utilities/_flexnav.scss */
+  /* line 156, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li ul.open li {
     overflow: visible;
     max-height: 100px;
   }
 
-  /* line 160, utilities/_flexnav.scss */
+  /* line 160, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .flexnav li ul.open ul.open {
     margin-left: 100%;
     top: 0;
   }
 
-  /* line 165, utilities/_flexnav.scss */
+  /* line 165, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
   .menu-button {
     display: none;
   }
 }
-/* line 171, utilities/_flexnav.scss */
+/* line 171, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie body.one-page {
   padding-top: 70px;
 }
 
-/* line 173, utilities/_flexnav.scss */
+/* line 173, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav {
   overflow: visible;
 }
 
-/* line 175, utilities/_flexnav.scss */
+/* line 175, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav.one-page {
   top: 0;
   right: auto;
   max-width: 1080px;
 }
 
-/* line 179, utilities/_flexnav.scss */
+/* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li {
   position: relative;
   list-style: none;
@@ -808,27 +828,27 @@ h1 a:hover, h1 a:active {
   overflow: visible;
 }
 
-/* line 188, utilities/_flexnav.scss */
+/* line 188, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li:hover > ul {
   display: block;
   width: 100%;
   overflow: visible;
 }
 
-/* line 192, utilities/_flexnav.scss */
+/* line 192, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li:hover > ul li {
   width: 100%;
   float: none;
 }
 
-/* line 195, utilities/_flexnav.scss */
+/* line 195, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li a {
   border-left: 1px solid #acaca1;
   border-bottom: none;
   overflow: visible;
 }
 
-/* line 199, utilities/_flexnav.scss */
+/* line 199, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li > ul {
   background: #acaca1;
   position: absolute;
@@ -839,29 +859,29 @@ h1 a:hover, h1 a:active {
   overflow: visible;
 }
 
-/* line 207, utilities/_flexnav.scss */
+/* line 207, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li ul li ul {
   top: 0;
 }
 
-/* line 209, utilities/_flexnav.scss */
+/* line 209, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li ul li a {
   border-bottom: none;
 }
 
-/* line 211, utilities/_flexnav.scss */
+/* line 211, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li ul.open {
   display: block;
   width: 100%;
   overflow: visible;
 }
 
-/* line 215, utilities/_flexnav.scss */
+/* line 215, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li ul.open li {
   width: 100%;
 }
 
-/* line 217, utilities/_flexnav.scss */
+/* line 217, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav li ul.open ul.open {
   margin-left: 100%;
   top: 0;
@@ -870,18 +890,18 @@ h1 a:hover, h1 a:active {
   overflow: visible;
 }
 
-/* line 223, utilities/_flexnav.scss */
+/* line 223, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .flexnav ul li:hover ul {
   margin-left: 100%;
   top: 0;
 }
 
-/* line 226, utilities/_flexnav.scss */
+/* line 226, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie .menu-button {
   display: none;
 }
 
-/* line 228, utilities/_flexnav.scss */
+/* line 228, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/utilities/_flexnav.scss */
 .oldie.ie7 .flexnav li {
   width: 19.9%;
 }
@@ -1232,7 +1252,7 @@ h1 a:hover, h1 a:active {
 /*
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, inuit.css/generic/_normalize.scss */
+/* line 22, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 article,
 aside,
 details,
@@ -1251,7 +1271,7 @@ summary {
 /*
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, inuit.css/generic/_normalize.scss */
+/* line 32, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 audio,
 canvas,
 video {
@@ -1262,7 +1282,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, inuit.css/generic/_normalize.scss */
+/* line 41, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -1271,7 +1291,7 @@ audio:not([controls]) {
 /*
  * Address styling not present in IE 8/9.
  */
-/* line 50, inuit.css/generic/_normalize.scss */
+/* line 50, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -1284,7 +1304,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, inuit.css/generic/_normalize.scss */
+/* line 64, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1297,7 +1317,7 @@ html {
 /*
  * Remove default margin.
  */
-/* line 74, inuit.css/generic/_normalize.scss */
+/* line 74, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 body {
   margin: 0;
 }
@@ -1308,7 +1328,7 @@ body {
 /*
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, inuit.css/generic/_normalize.scss */
+/* line 86, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -1316,7 +1336,7 @@ a:focus {
 /*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, inuit.css/generic/_normalize.scss */
+/* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -1329,7 +1349,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, inuit.css/generic/_normalize.scss */
+/* line 108, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -1338,7 +1358,7 @@ h1 {
 /*
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, inuit.css/generic/_normalize.scss */
+/* line 117, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -1346,7 +1366,7 @@ abbr[title] {
 /*
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, inuit.css/generic/_normalize.scss */
+/* line 126, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -1355,7 +1375,7 @@ strong {
 /*
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, inuit.css/generic/_normalize.scss */
+/* line 134, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -1363,7 +1383,7 @@ dfn {
 /*
  * Address differences between Firefox and other browsers.
  */
-/* line 142, inuit.css/generic/_normalize.scss */
+/* line 142, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -1373,7 +1393,7 @@ hr {
 /*
  * Address styling not present in IE 8/9.
  */
-/* line 152, inuit.css/generic/_normalize.scss */
+/* line 152, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -1382,7 +1402,7 @@ mark {
 /*
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, inuit.css/generic/_normalize.scss */
+/* line 164, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 code,
 kbd,
 pre,
@@ -1394,7 +1414,7 @@ samp {
 /*
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, inuit.css/generic/_normalize.scss */
+/* line 173, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -1402,7 +1422,7 @@ pre {
 /*
  * Set consistent quote types.
  */
-/* line 181, inuit.css/generic/_normalize.scss */
+/* line 181, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -1410,7 +1430,7 @@ q {
 /*
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, inuit.css/generic/_normalize.scss */
+/* line 189, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -1418,7 +1438,7 @@ small {
 /*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, inuit.css/generic/_normalize.scss */
+/* line 198, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -1427,12 +1447,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 205, inuit.css/generic/_normalize.scss */
+/* line 205, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 209, inuit.css/generic/_normalize.scss */
+/* line 209, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -1443,7 +1463,7 @@ sub {
 /*
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, inuit.css/generic/_normalize.scss */
+/* line 221, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 img {
   border: 0;
 }
@@ -1451,7 +1471,7 @@ img {
 /*
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, inuit.css/generic/_normalize.scss */
+/* line 229, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -1462,7 +1482,7 @@ svg:not(:root) {
 /*
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, inuit.css/generic/_normalize.scss */
+/* line 241, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -1473,7 +1493,7 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 253, inuit.css/generic/_normalize.scss */
+/* line 253, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -1484,7 +1504,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, inuit.css/generic/_normalize.scss */
+/* line 264, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -1497,7 +1517,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, inuit.css/generic/_normalize.scss */
+/* line 278, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button,
 input,
 select,
@@ -1514,7 +1534,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, inuit.css/generic/_normalize.scss */
+/* line 290, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -1526,7 +1546,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, inuit.css/generic/_normalize.scss */
+/* line 302, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -1539,7 +1559,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, inuit.css/generic/_normalize.scss */
+/* line 317, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -1553,7 +1573,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 327, inuit.css/generic/_normalize.scss */
+/* line 327, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -1563,7 +1583,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, inuit.css/generic/_normalize.scss */
+/* line 337, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -1577,7 +1597,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, inuit.css/generic/_normalize.scss */
+/* line 348, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -1591,7 +1611,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, inuit.css/generic/_normalize.scss */
+/* line 361, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -1600,7 +1620,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, inuit.css/generic/_normalize.scss */
+/* line 370, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -1611,7 +1631,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, inuit.css/generic/_normalize.scss */
+/* line 380, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -1625,7 +1645,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 393, inuit.css/generic/_normalize.scss */
+/* line 393, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1641,7 +1661,7 @@ table {
 /**
 * Let’s make the box model all nice, shall we...?
 */
-/* line 16, inuit.css/generic/_reset.scss */
+/* line 16, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1653,7 +1673,7 @@ table {
 /**
  * The usual...
  */
-/* line 30, inuit.css/generic/_reset.scss */
+/* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul,
@@ -1667,7 +1687,7 @@ hr {
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
-/* line 38, inuit.css/generic/_reset.scss */
+/* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 abbr[title], dfn[title] {
   cursor: help;
 }
@@ -1675,7 +1695,7 @@ abbr[title], dfn[title] {
 /**
  * Remove underlines from potentially troublesome elements.
  */
-/* line 45, inuit.css/generic/_reset.scss */
+/* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 u, ins {
   text-decoration: none;
 }
@@ -1683,7 +1703,7 @@ u, ins {
 /**
  * Apply faux underline via `border-bottom`.
  */
-/* line 52, inuit.css/generic/_reset.scss */
+/* line 52, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 ins {
   border-bottom: 1px solid;
 }
@@ -1691,7 +1711,7 @@ ins {
 /**
  * So that `alt` text is visually offset if images don’t load.
  */
-/* line 59, inuit.css/generic/_reset.scss */
+/* line 59, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 img {
   font-style: italic;
 }
@@ -1699,7 +1719,7 @@ img {
 /**
  * Give form elements some cursor interactions...
  */
-/* line 71, inuit.css/generic/_reset.scss */
+/* line 71, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 label,
 input,
 textarea,
@@ -1709,7 +1729,7 @@ option {
   cursor: pointer;
 }
 
-/* line 77, inuit.css/generic/_reset.scss */
+/* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_reset.scss */
 .text-input:active,
 .text-input:focus,
 textarea:active,
@@ -1726,7 +1746,7 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-/* line 10, inuit.css/generic/_clearfix.scss */
+/* line 10, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_clearfix.scss */
 .cf:after, .nav:after {
   content: "";
   display: table;
@@ -1744,7 +1764,7 @@ textarea:focus {
 /**
  * Base elements
  */
-/* line 24, inuit.css/generic/_shared.scss */
+/* line 24, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_shared.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
 blockquote, p, address,
@@ -1758,7 +1778,7 @@ pre,
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 28, inuit.css/generic/_shared.scss */
+/* line 28, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_shared.scss */
 .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
 ul, .islet ol, .islet dl, .islet
 blockquote, .islet p, .islet address, .islet
@@ -1775,7 +1795,7 @@ pre, .islet .form-fields > li, .islet
 /**
  * Doubled up `margin-bottom` helper class.
  */
-/* line 38, inuit.css/generic/_shared.scss */
+/* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_shared.scss */
 .landmark {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -1785,7 +1805,7 @@ pre, .islet .form-fields > li, .islet
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
-/* line 48, inuit.css/generic/_shared.scss */
+/* line 48, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_shared.scss */
 hr {
   margin-bottom: 22px;
   margin-bottom: 1.375rem;
@@ -1795,7 +1815,7 @@ hr {
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-/* line 58, inuit.css/generic/_shared.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_shared.scss */
 ul, ol, dd {
   margin-left: 48px;
   margin-left: 3rem;
@@ -1807,7 +1827,7 @@ ul, ol, dd {
 /*------------------------------------*\
     $MAIN
 \*------------------------------------*/
-/* line 4, inuit.css/base/_main.scss */
+/* line 4, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_main.scss */
 html {
   font: 1em/1.5 "Droid Serif", serif;
   overflow-y: scroll;
@@ -1824,42 +1844,42 @@ html {
  * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
  * heading hierarchy.
  */
-/* line 11, inuit.css/base/_headings.scss */
+/* line 11, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h1, .alpha {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.33333;
 }
 
-/* line 14, inuit.css/base/_headings.scss */
+/* line 14, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h2, .beta {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.6;
 }
 
-/* line 17, inuit.css/base/_headings.scss */
+/* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h3, .gamma {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
 }
 
-/* line 20, inuit.css/base/_headings.scss */
+/* line 20, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-/* line 23, inuit.css/base/_headings.scss */
+/* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* line 26, inuit.css/base/_headings.scss */
+/* line 26, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
   font-size: 0.875rem;
@@ -1876,7 +1896,7 @@ h6, .zeta {
    </hgroup>
  *
  */
-/* line 43, inuit.css/base/_headings.scss */
+/* line 43, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 hgroup .hN {
   margin-bottom: 0;
 }
@@ -1885,21 +1905,21 @@ hgroup .hN {
  * A series of classes for setting massive type; for use in heroes, mastheads,
  * promos, etc.
  */
-/* line 52, inuit.css/base/_headings.scss */
+/* line 52, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 .giga {
   font-size: 96px;
   font-size: 6rem;
   line-height: 1;
 }
 
-/* line 55, inuit.css/base/_headings.scss */
+/* line 55, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 .mega {
   font-size: 72px;
   font-size: 4.5rem;
   line-height: 1;
 }
 
-/* line 58, inuit.css/base/_headings.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_headings.scss */
 .kilo {
   font-size: 48px;
   font-size: 3rem;
@@ -1913,7 +1933,7 @@ hgroup .hN {
  * The `.lede` class is used to make the introductory text (usually a paragraph)
  * of a document slightly larger.
  */
-/* line 9, inuit.css/base/_paragraphs.scss */
+/* line 9, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_paragraphs.scss */
 .lede,
 .lead {
   font-size: 18px;
@@ -1927,7 +1947,7 @@ hgroup .hN {
 /**
  * A series of classes for setting tiny type; for use in smallprint etc.
  */
-/* line 8, inuit.css/base/_smallprint.scss */
+/* line 8, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_smallprint.scss */
 .smallprint,
 .milli {
   font-size: 12px;
@@ -1935,7 +1955,7 @@ hgroup .hN {
   line-height: 2;
 }
 
-/* line 11, inuit.css/base/_smallprint.scss */
+/* line 11, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_smallprint.scss */
 .micro {
   font-size: 10px;
   font-size: 0.625rem;
@@ -1954,56 +1974,56 @@ hgroup .hN {
 /**
  * Inline quotes.
  */
-/* line 20, inuit.css/base/_quotes.scss */
+/* line 20, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 q {
   quotes: "\2018" "\2019" "\201C" "\201D";
 }
-/* line 23, inuit.css/base/_quotes.scss */
+/* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 q:before {
   content: "\2018";
   content: open-quote;
 }
-/* line 27, inuit.css/base/_quotes.scss */
+/* line 27, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 q:after {
   content: "\2019";
   content: close-quote;
 }
-/* line 32, inuit.css/base/_quotes.scss */
+/* line 32, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 q q:before {
   content: "\201C";
   content: open-quote;
 }
-/* line 36, inuit.css/base/_quotes.scss */
+/* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 q q:after {
   content: "\201D";
   content: close-quote;
 }
 
-/* line 42, inuit.css/base/_quotes.scss */
+/* line 42, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote {
   quotes: "\201C" "\201D";
 }
-/* line 45, inuit.css/base/_quotes.scss */
+/* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote p:before {
   content: "\201C";
   content: open-quote;
 }
-/* line 49, inuit.css/base/_quotes.scss */
+/* line 49, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote p:after {
   content: "";
   content: no-close-quote;
 }
-/* line 53, inuit.css/base/_quotes.scss */
+/* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote p:last-of-type:after {
   content: "\201D";
   content: close-quote;
 }
-/* line 58, inuit.css/base/_quotes.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote q:before {
   content: "\2018";
   content: open-quote;
 }
-/* line 62, inuit.css/base/_quotes.scss */
+/* line 62, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote q:after {
   content: "\2019";
   content: close-quote;
@@ -2018,24 +2038,24 @@ blockquote q:after {
    </blockquote>
  *
  */
-/* line 78, inuit.css/base/_quotes.scss */
+/* line 78, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote {
   /**
    * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
   text-indent: -0.41em;
 }
-/* line 84, inuit.css/base/_quotes.scss */
+/* line 84, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 89, inuit.css/base/_quotes.scss */
+/* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 .source {
   display: block;
   text-indent: 0;
 }
-/* line 93, inuit.css/base/_quotes.scss */
+/* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_quotes.scss */
 .source:before {
   content: "\2014";
 }
@@ -2046,12 +2066,12 @@ blockquote p:last-of-type {
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-/* line 7, inuit.css/base/_code.scss */
+/* line 7, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_code.scss */
 pre {
   overflow: auto;
 }
 
-/* line 10, inuit.css/base/_code.scss */
+/* line 10, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_code.scss */
 pre mark {
   background: none;
   border-bottom: 1px solid;
@@ -2064,7 +2084,7 @@ pre mark {
    <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
  *
  */
-/* line 23, inuit.css/base/_code.scss */
+/* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_code.scss */
 .code-comment {
   /**
    * Override this setting in your theme stylesheet
@@ -2095,7 +2115,7 @@ pre mark {
  * 3. Make sure lines of code don’t wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
-/* line 54, inuit.css/base/_code.scss */
+/* line 54, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_code.scss */
 .line-numbers {
   font-family: monospace, serif;
   /* [1] */
@@ -2108,7 +2128,7 @@ pre mark {
   margin-left: 0;
 }
 
-/* line 61, inuit.css/base/_code.scss */
+/* line 61, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_code.scss */
 .line-numbers code {
   white-space: pre;
   /* [4] */
@@ -2123,7 +2143,7 @@ pre mark {
 /**
  * Fluid images.
  */
-/* line 10, inuit.css/base/_images.scss */
+/* line 10, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 img {
   max-width: 100%;
 }
@@ -2131,7 +2151,7 @@ img {
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
-/* line 19, inuit.css/base/_images.scss */
+/* line 19, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 img[width],
 img[height] {
   max-width: none;
@@ -2140,7 +2160,7 @@ img[height] {
 /**
  * Rounded images.
  */
-/* line 27, inuit.css/base/_images.scss */
+/* line 27, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--round {
   border-radius: 4px;
 }
@@ -2148,21 +2168,21 @@ img[height] {
 /**
  * Image placement variations.
  */
-/* line 33, inuit.css/base/_images.scss */
+/* line 33, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--right {
   float: right;
   margin-bottom: 24px;
   margin-left: 24px;
 }
 
-/* line 38, inuit.css/base/_images.scss */
+/* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--left {
   float: left;
   margin-right: 24px;
   margin-bottom: 24px;
 }
 
-/* line 43, inuit.css/base/_images.scss */
+/* line 43, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
@@ -2176,17 +2196,17 @@ img[height] {
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-/* line 57, inuit.css/base/_images.scss */
+/* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--short {
   height: 120px;
 }
 
-/* line 60, inuit.css/base/_images.scss */
+/* line 60, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--medium {
   height: 240px;
 }
 
-/* line 63, inuit.css/base/_images.scss */
+/* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 .img--tall {
   height: 360px;
 }
@@ -2194,7 +2214,7 @@ img[height] {
 /**
  * Images in `figure` elements.
  */
-/* line 71, inuit.css/base/_images.scss */
+/* line 71, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_images.scss */
 figure > img {
   display: block;
 }
@@ -2205,7 +2225,7 @@ figure > img {
 /**
  * Remove vertical spacing from nested lists.
  */
-/* line 9, inuit.css/base/_lists.scss */
+/* line 9, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -2215,7 +2235,7 @@ li > ol {
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
 /*ul*/
-/* line 17, inuit.css/base/_lists.scss */
+/* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_lists.scss */
 .numbered-list {
   list-style-type: decimal;
 }
@@ -2277,19 +2297,19 @@ li > ol {
    </table>
  *
  */
-/* line 58, inuit.css/base/_tables.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 table {
   width: 100%;
 }
 
-/* line 62, inuit.css/base/_tables.scss */
+/* line 62, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 th,
 td {
   padding: 6px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
-  /* line 62, inuit.css/base/_tables.scss */
+  /* line 62, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
   th,
   td {
     padding: 12px;
@@ -2299,27 +2319,27 @@ td {
 /**
  * Cell alignments
  */
-/* line 74, inuit.css/base/_tables.scss */
+/* line 74, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 [colspan] {
   text-align: center;
 }
 
-/* line 77, inuit.css/base/_tables.scss */
+/* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 [colspan="1"] {
   text-align: left;
 }
 
-/* line 80, inuit.css/base/_tables.scss */
+/* line 80, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 [rowspan] {
   vertical-align: middle;
 }
 
-/* line 83, inuit.css/base/_tables.scss */
+/* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 [rowspan="1"] {
   vertical-align: top;
 }
 
-/* line 86, inuit.css/base/_tables.scss */
+/* line 86, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .numerical {
   text-align: right;
 }
@@ -2330,136 +2350,136 @@ td {
  * class so that column can soak up the effects of any accidental breakage in
  * the table.
  */
-/* line 96, inuit.css/base/_tables.scss */
+/* line 96, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t5 {
   width: 5%;
 }
 
-/* line 97, inuit.css/base/_tables.scss */
+/* line 97, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t10 {
   width: 10%;
 }
 
-/* line 98, inuit.css/base/_tables.scss */
+/* line 98, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t12 {
   width: 12.5%;
 }
 
 /* 1/8 */
-/* line 99, inuit.css/base/_tables.scss */
+/* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t15 {
   width: 15%;
 }
 
-/* line 100, inuit.css/base/_tables.scss */
+/* line 100, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t20 {
   width: 20%;
 }
 
-/* line 101, inuit.css/base/_tables.scss */
+/* line 101, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t25 {
   width: 25%;
 }
 
 /* 1/4 */
-/* line 102, inuit.css/base/_tables.scss */
+/* line 102, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t30 {
   width: 30%;
 }
 
-/* line 103, inuit.css/base/_tables.scss */
+/* line 103, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t33 {
   width: 33.333%;
 }
 
 /* 1/3 */
-/* line 104, inuit.css/base/_tables.scss */
+/* line 104, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t35 {
   width: 35%;
 }
 
-/* line 105, inuit.css/base/_tables.scss */
+/* line 105, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t37 {
   width: 37.5%;
 }
 
 /* 3/8 */
-/* line 106, inuit.css/base/_tables.scss */
+/* line 106, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t40 {
   width: 40%;
 }
 
-/* line 107, inuit.css/base/_tables.scss */
+/* line 107, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t45 {
   width: 45%;
 }
 
-/* line 108, inuit.css/base/_tables.scss */
+/* line 108, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t50 {
   width: 50%;
 }
 
 /* 1/2 */
-/* line 109, inuit.css/base/_tables.scss */
+/* line 109, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t55 {
   width: 55%;
 }
 
-/* line 110, inuit.css/base/_tables.scss */
+/* line 110, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t60 {
   width: 60%;
 }
 
-/* line 111, inuit.css/base/_tables.scss */
+/* line 111, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t62 {
   width: 62.5%;
 }
 
 /* 5/8 */
-/* line 112, inuit.css/base/_tables.scss */
+/* line 112, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t65 {
   width: 65%;
 }
 
-/* line 113, inuit.css/base/_tables.scss */
+/* line 113, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t66 {
   width: 66.666%;
 }
 
 /* 2/3 */
-/* line 114, inuit.css/base/_tables.scss */
+/* line 114, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t70 {
   width: 70%;
 }
 
-/* line 115, inuit.css/base/_tables.scss */
+/* line 115, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t75 {
   width: 75%;
 }
 
 /* 3/4*/
-/* line 116, inuit.css/base/_tables.scss */
+/* line 116, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t80 {
   width: 80%;
 }
 
-/* line 117, inuit.css/base/_tables.scss */
+/* line 117, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t85 {
   width: 85%;
 }
 
-/* line 118, inuit.css/base/_tables.scss */
+/* line 118, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t87 {
   width: 87.5%;
 }
 
 /* 7/8 */
-/* line 119, inuit.css/base/_tables.scss */
+/* line 119, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t90 {
   width: 90%;
 }
 
-/* line 120, inuit.css/base/_tables.scss */
+/* line 120, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .t95 {
   width: 95%;
 }
@@ -2467,21 +2487,21 @@ td {
 /**
  * Bordered tables
  */
-/* line 129, inuit.css/base/_tables.scss */
+/* line 129, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--bordered th,
 .table--bordered td {
   border: 1px solid #cccccc;
 }
-/* line 132, inuit.css/base/_tables.scss */
+/* line 132, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--bordered th:empty,
 .table--bordered td:empty {
   border: none;
 }
-/* line 137, inuit.css/base/_tables.scss */
+/* line 137, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--bordered thead tr:last-child th {
   border-bottom-width: 2px;
 }
-/* line 141, inuit.css/base/_tables.scss */
+/* line 141, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--bordered tbody tr th:last-of-type {
   border-right-width: 2px;
 }
@@ -2489,7 +2509,7 @@ td {
 /**
  * Striped tables
  */
-/* line 152, inuit.css/base/_tables.scss */
+/* line 152, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
   /* Override this color in your theme stylesheet */
@@ -2498,7 +2518,7 @@ td {
 /**
  * Data table
  */
-/* line 161, inuit.css/base/_tables.scss */
+/* line 161, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_tables.scss */
 .table--data {
   font: 12px/1.5 sans-serif;
 }
@@ -2511,7 +2531,7 @@ td {
  * Demo: jsfiddle.net/inuitcss/MhHHU
  *
  */
-/* line 9, inuit.css/base/_forms.scss */
+/* line 9, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 fieldset {
   padding: 24px;
 }
@@ -2526,7 +2546,7 @@ fieldset {
    <input type=password class=text-input>
  *
  */
-/* line 25, inuit.css/base/_forms.scss */
+/* line 25, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .text-input,
 textarea {
   /**
@@ -2553,13 +2573,13 @@ textarea {
    </ul>
  *
  */
-/* line 51, inuit.css/base/_forms.scss */
+/* line 51, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .form-fields {
   list-style: none;
   margin: 0;
 }
 
-/* line 58, inuit.css/base/_forms.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .form-fields > li:last-child {
   margin-bottom: 0;
 }
@@ -2590,7 +2610,7 @@ textarea {
    </li>
  *
  */
-/* line 90, inuit.css/base/_forms.scss */
+/* line 90, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 label,
 .label {
   display: block;
@@ -2602,7 +2622,7 @@ label,
    <label>Card number <small class=additional>No spaces</small></label>
  *
  */
-/* line 99, inuit.css/base/_forms.scss */
+/* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .additional {
   display: block;
   font-weight: normal;
@@ -2623,7 +2643,7 @@ label,
    </li>
  *
  */
-/* line 120, inuit.css/base/_forms.scss */
+/* line 120, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .check-list {
   list-style: none;
   margin: 0;
@@ -2632,7 +2652,7 @@ label,
 /*
  * Labels in check-lists
  */
-/* line 129, inuit.css/base/_forms.scss */
+/* line 129, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .check-label,
 .check-list label,
 .check-list .label {
@@ -2654,7 +2674,7 @@ label,
    </li>
  *
  */
-/* line 149, inuit.css/base/_forms.scss */
+/* line 149, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .spoken-form label {
   display: inline-block;
   font: inherit;
@@ -2673,13 +2693,13 @@ label,
  *
  */
 /*small*/
-/* line 167, inuit.css/base/_forms.scss */
+/* line 167, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .extra-help {
   display: inline-block;
   visibility: hidden;
 }
 
-/* line 172, inuit.css/base/_forms.scss */
+/* line 172, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/base/_forms.scss */
 .text-input:active + .extra-help,
 .text-input:focus + .extra-help {
   visibility: visible;
@@ -2724,7 +2744,7 @@ label,
 /**
  * Grid wrapper
  */
-/* line 41, inuit.css/objects/_grids.scss */
+/* line 41, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_grids.scss */
 .grid {
   margin-left: -24px;
   list-style: none;
@@ -2734,7 +2754,7 @@ label,
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-/* line 51, inuit.css/objects/_grids.scss */
+/* line 51, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_grids.scss */
 .grid > .grid {
   margin-left: 0;
 }
@@ -2742,7 +2762,7 @@ label,
 /**
  * Grid
  */
-/* line 59, inuit.css/objects/_grids.scss */
+/* line 59, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_grids.scss */
 .grid__item {
   display: inline-block;
   width: 100%;
@@ -2768,12 +2788,12 @@ label,
  * Demo: jsfiddle.net/inuitcss/Vnph4
  *
  */
-/* line 21, inuit.css/objects/_nav.scss */
+/* line 21, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav {
   list-style: none;
   margin-left: 0;
 }
-/* line 29, inuit.css/objects/_nav.scss */
+/* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav > li,
 .nav > li > a {
   display: inline-block;
@@ -2792,11 +2812,11 @@ label,
    </ul>
  *
  */
-/* line 51, inuit.css/objects/_nav.scss */
+/* line 51, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--stacked > li {
   display: list-item;
 }
-/* line 54, inuit.css/objects/_nav.scss */
+/* line 54, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--stacked > li > a {
   display: block;
 }
@@ -2812,7 +2832,7 @@ label,
    </ul>
  *
  */
-/* line 72, inuit.css/objects/_nav.scss */
+/* line 72, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--banner {
   text-align: center;
 }
@@ -2828,7 +2848,7 @@ label,
    </ul>
  *
  */
-/* line 88, inuit.css/objects/_nav.scss */
+/* line 88, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--block {
   line-height: 1;
   /**
@@ -2838,12 +2858,12 @@ label,
   word-spacing: -0.43em;
   white-space: nowrap;
 }
-/* line 97, inuit.css/objects/_nav.scss */
+/* line 97, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--block > li {
   letter-spacing: normal;
   word-spacing: normal;
 }
-/* line 101, inuit.css/objects/_nav.scss */
+/* line 101, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--block > li > a {
   padding: 12px;
 }
@@ -2861,16 +2881,16 @@ label,
  *
  * Thanks to @pimpl for this idea!
  */
-/* line 121, inuit.css/objects/_nav.scss */
+/* line 121, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--fit {
   display: table;
   width: 100%;
 }
-/* line 125, inuit.css/objects/_nav.scss */
+/* line 125, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--fit > li {
   display: table-cell;
 }
-/* line 128, inuit.css/objects/_nav.scss */
+/* line 128, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--fit > li > a {
   display: block;
 }
@@ -2881,11 +2901,11 @@ label,
    `<ul class="nav  nav--keywords>`
  *
  */
-/* line 145, inuit.css/objects/_nav.scss */
+/* line 145, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--keywords > li:after {
   content: "\002C" "\00A0";
 }
-/* line 149, inuit.css/objects/_nav.scss */
+/* line 149, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_nav.scss */
 .nav--keywords > li:last-child:after {
   display: none;
 }
@@ -2936,7 +2956,7 @@ label,
  * 8. Basic cosmetics for default buttons. Change or override at will.
  * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
-/* line 56, inuit.css/objects/_beautons.scss */
+/* line 56, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn {
   display: inline-block;
   /* [1] */
@@ -2968,12 +2988,12 @@ label,
   /* [8] */
 }
 
-/* line 76, inuit.css/objects/_beautons.scss */
+/* line 76, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn, .btn:hover {
   text-decoration: none;
   /* [9] */
 }
-/* line 81, inuit.css/objects/_beautons.scss */
+/* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
@@ -2987,21 +3007,21 @@ label,
  * These all follow the same sizing rules as above; text is 1em, space around it
  * remains uniform.
  */
-/* line 99, inuit.css/objects/_beautons.scss */
+/* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--small {
   padding-right: 0.5em;
   padding-left: 0.5em;
   line-height: 2;
 }
 
-/* line 105, inuit.css/objects/_beautons.scss */
+/* line 105, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--large {
   padding-right: 1.5em;
   padding-left: 1.5em;
   line-height: 4;
 }
 
-/* line 111, inuit.css/objects/_beautons.scss */
+/* line 111, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--huge {
   padding-right: 2em;
   padding-left: 2em;
@@ -3013,7 +3033,7 @@ label,
  *
  * 1. Remove padding so that widths and paddings don’t conflict.
  */
-/* line 122, inuit.css/objects/_beautons.scss */
+/* line 122, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--full {
   width: 100%;
   padding-right: 0;
@@ -3029,17 +3049,17 @@ label,
 /**
  * Button font-size modifiers.
  */
-/* line 139, inuit.css/objects/_beautons.scss */
+/* line 139, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--alpha {
   font-size: 3rem;
 }
 
-/* line 143, inuit.css/objects/_beautons.scss */
+/* line 143, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--beta {
   font-size: 2rem;
 }
 
-/* line 147, inuit.css/objects/_beautons.scss */
+/* line 147, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--gamma {
   font-size: 1rem;
 }
@@ -3047,7 +3067,7 @@ label,
 /**
  * Make the button inherit sizing from its parent.
  */
-/* line 154, inuit.css/objects/_beautons.scss */
+/* line 154, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--natural {
   vertical-align: baseline;
   font-size: inherit;
@@ -3065,7 +3085,7 @@ label,
 /**
  * Positive actions; e.g. sign in, purchase, submit, etc.
  */
-/* line 179, inuit.css/objects/_beautons.scss */
+/* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--positive {
   background-color: #4A993E;
   color: #fff;
@@ -3074,7 +3094,7 @@ label,
 /**
  * Negative actions; e.g. close account, delete photo, remove friend, etc.
  */
-/* line 187, inuit.css/objects/_beautons.scss */
+/* line 187, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--negative {
   background-color: #b33630;
   color: #fff;
@@ -3085,7 +3105,7 @@ label,
  * 
  * 1. Make the button look like normal text when hovered.
  */
-/* line 200, inuit.css/objects/_beautons.scss */
+/* line 200, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--inactive,
 .btn--inactive:hover,
 .btn--inactive:active,
@@ -3104,13 +3124,13 @@ label,
  *
  * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
  */
-/* line 218, inuit.css/objects/_beautons.scss */
+/* line 218, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--soft {
   border-radius: 200px;
   /* [1] */
 }
 
-/* line 222, inuit.css/objects/_beautons.scss */
+/* line 222, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/objects/_beautons.scss */
 .btn--hard {
   border-radius: 0;
 }
@@ -3132,7 +3152,7 @@ label,
 /**
 * Whole
 */
-/* line 17, inuit.css/generic/_widths.scss */
+/* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-whole {
   width: 100%;
 }
@@ -3140,7 +3160,7 @@ label,
 /**
 * Halves
 */
-/* line 23, inuit.css/generic/_widths.scss */
+/* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
   width: 50%;
 }
@@ -3148,12 +3168,12 @@ label,
 /**
 * Thirds
 */
-/* line 29, inuit.css/generic/_widths.scss */
+/* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-third, .two-sixths, .four-twelfths {
   width: 33.333%;
 }
 
-/* line 30, inuit.css/generic/_widths.scss */
+/* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .two-thirds, .four-sixths, .eight-twelfths {
   width: 66.666%;
 }
@@ -3161,12 +3181,12 @@ label,
 /**
 * Quarters
 */
-/* line 36, inuit.css/generic/_widths.scss */
+/* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-quarter, .two-eighths, .three-twelfths {
   width: 25%;
 }
 
-/* line 38, inuit.css/generic/_widths.scss */
+/* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .three-quarters, .six-eighths, .nine-twelfths {
   width: 75%;
 }
@@ -3174,22 +3194,22 @@ label,
 /**
 * Fifths
 */
-/* line 44, inuit.css/generic/_widths.scss */
+/* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-fifth, .two-tenths {
   width: 20%;
 }
 
-/* line 45, inuit.css/generic/_widths.scss */
+/* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .two-fifths, .four-tenths {
   width: 40%;
 }
 
-/* line 46, inuit.css/generic/_widths.scss */
+/* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .three-fifths, .six-tenths {
   width: 60%;
 }
 
-/* line 47, inuit.css/generic/_widths.scss */
+/* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .four-fifths, .eight-tenths {
   width: 80%;
 }
@@ -3197,12 +3217,12 @@ label,
 /**
 * Sixths
 */
-/* line 53, inuit.css/generic/_widths.scss */
+/* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-sixth, .two-twelfths {
   width: 16.666%;
 }
 
-/* line 57, inuit.css/generic/_widths.scss */
+/* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .five-sixths, .ten-twelfths {
   width: 83.333%;
 }
@@ -3210,22 +3230,22 @@ label,
 /**
 * Eighths
 */
-/* line 63, inuit.css/generic/_widths.scss */
+/* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-eighth {
   width: 12.5%;
 }
 
-/* line 65, inuit.css/generic/_widths.scss */
+/* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .three-eighths {
   width: 37.5%;
 }
 
-/* line 67, inuit.css/generic/_widths.scss */
+/* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .five-eighths {
   width: 62.5%;
 }
 
-/* line 69, inuit.css/generic/_widths.scss */
+/* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .seven-eighths {
   width: 87.5%;
 }
@@ -3233,22 +3253,22 @@ label,
 /**
 * Tenths
 */
-/* line 75, inuit.css/generic/_widths.scss */
+/* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-tenth {
   width: 10%;
 }
 
-/* line 77, inuit.css/generic/_widths.scss */
+/* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .three-tenths {
   width: 30%;
 }
 
-/* line 81, inuit.css/generic/_widths.scss */
+/* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .seven-tenths {
   width: 70%;
 }
 
-/* line 83, inuit.css/generic/_widths.scss */
+/* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .nine-tenths {
   width: 90%;
 }
@@ -3256,22 +3276,22 @@ label,
 /**
 * Twelfths
 */
-/* line 89, inuit.css/generic/_widths.scss */
+/* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .one-twelfth {
   width: 8.333%;
 }
 
-/* line 93, inuit.css/generic/_widths.scss */
+/* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .five-twelfths {
   width: 41.666%;
 }
 
-/* line 95, inuit.css/generic/_widths.scss */
+/* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .seven-twelfths {
   width: 58.333%;
 }
 
-/* line 99, inuit.css/generic/_widths.scss */
+/* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
 .eleven-twelfths {
   width: 91.666%;
 }
@@ -3294,7 +3314,7 @@ label,
   /**
   * Whole
   */
-  /* line 17, inuit.css/generic/_widths.scss */
+  /* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-whole {
     width: 100%;
   }
@@ -3302,7 +3322,7 @@ label,
   /**
   * Halves
   */
-  /* line 23, inuit.css/generic/_widths.scss */
+  /* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
     width: 50%;
   }
@@ -3310,12 +3330,12 @@ label,
   /**
   * Thirds
   */
-  /* line 29, inuit.css/generic/_widths.scss */
+  /* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
     width: 33.333%;
   }
 
-  /* line 30, inuit.css/generic/_widths.scss */
+  /* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
     width: 66.666%;
   }
@@ -3323,12 +3343,12 @@ label,
   /**
   * Quarters
   */
-  /* line 36, inuit.css/generic/_widths.scss */
+  /* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
     width: 25%;
   }
 
-  /* line 38, inuit.css/generic/_widths.scss */
+  /* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
     width: 75%;
   }
@@ -3336,22 +3356,22 @@ label,
   /**
   * Fifths
   */
-  /* line 44, inuit.css/generic/_widths.scss */
+  /* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-fifth, .palm-two-tenths {
     width: 20%;
   }
 
-  /* line 45, inuit.css/generic/_widths.scss */
+  /* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-two-fifths, .palm-four-tenths {
     width: 40%;
   }
 
-  /* line 46, inuit.css/generic/_widths.scss */
+  /* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-three-fifths, .palm-six-tenths {
     width: 60%;
   }
 
-  /* line 47, inuit.css/generic/_widths.scss */
+  /* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-four-fifths, .palm-eight-tenths {
     width: 80%;
   }
@@ -3359,12 +3379,12 @@ label,
   /**
   * Sixths
   */
-  /* line 53, inuit.css/generic/_widths.scss */
+  /* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-sixth, .palm-two-twelfths {
     width: 16.666%;
   }
 
-  /* line 57, inuit.css/generic/_widths.scss */
+  /* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-five-sixths, .palm-ten-twelfths {
     width: 83.333%;
   }
@@ -3372,22 +3392,22 @@ label,
   /**
   * Eighths
   */
-  /* line 63, inuit.css/generic/_widths.scss */
+  /* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-eighth {
     width: 12.5%;
   }
 
-  /* line 65, inuit.css/generic/_widths.scss */
+  /* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-three-eighths {
     width: 37.5%;
   }
 
-  /* line 67, inuit.css/generic/_widths.scss */
+  /* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-five-eighths {
     width: 62.5%;
   }
 
-  /* line 69, inuit.css/generic/_widths.scss */
+  /* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-seven-eighths {
     width: 87.5%;
   }
@@ -3395,22 +3415,22 @@ label,
   /**
   * Tenths
   */
-  /* line 75, inuit.css/generic/_widths.scss */
+  /* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-tenth {
     width: 10%;
   }
 
-  /* line 77, inuit.css/generic/_widths.scss */
+  /* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-three-tenths {
     width: 30%;
   }
 
-  /* line 81, inuit.css/generic/_widths.scss */
+  /* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-seven-tenths {
     width: 70%;
   }
 
-  /* line 83, inuit.css/generic/_widths.scss */
+  /* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-nine-tenths {
     width: 90%;
   }
@@ -3418,22 +3438,22 @@ label,
   /**
   * Twelfths
   */
-  /* line 89, inuit.css/generic/_widths.scss */
+  /* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-one-twelfth {
     width: 8.333%;
   }
 
-  /* line 93, inuit.css/generic/_widths.scss */
+  /* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-five-twelfths {
     width: 41.666%;
   }
 
-  /* line 95, inuit.css/generic/_widths.scss */
+  /* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-seven-twelfths {
     width: 58.333%;
   }
 
-  /* line 99, inuit.css/generic/_widths.scss */
+  /* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .palm-eleven-twelfths {
     width: 91.666%;
   }
@@ -3442,7 +3462,7 @@ label,
   /**
   * Whole
   */
-  /* line 17, inuit.css/generic/_widths.scss */
+  /* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-whole {
     width: 100%;
   }
@@ -3450,7 +3470,7 @@ label,
   /**
   * Halves
   */
-  /* line 23, inuit.css/generic/_widths.scss */
+  /* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
     width: 50%;
   }
@@ -3458,12 +3478,12 @@ label,
   /**
   * Thirds
   */
-  /* line 29, inuit.css/generic/_widths.scss */
+  /* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
     width: 33.333%;
   }
 
-  /* line 30, inuit.css/generic/_widths.scss */
+  /* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
     width: 66.666%;
   }
@@ -3471,12 +3491,12 @@ label,
   /**
   * Quarters
   */
-  /* line 36, inuit.css/generic/_widths.scss */
+  /* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
     width: 25%;
   }
 
-  /* line 38, inuit.css/generic/_widths.scss */
+  /* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
     width: 75%;
   }
@@ -3484,22 +3504,22 @@ label,
   /**
   * Fifths
   */
-  /* line 44, inuit.css/generic/_widths.scss */
+  /* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-fifth, .lap-two-tenths {
     width: 20%;
   }
 
-  /* line 45, inuit.css/generic/_widths.scss */
+  /* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-two-fifths, .lap-four-tenths {
     width: 40%;
   }
 
-  /* line 46, inuit.css/generic/_widths.scss */
+  /* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-three-fifths, .lap-six-tenths {
     width: 60%;
   }
 
-  /* line 47, inuit.css/generic/_widths.scss */
+  /* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-four-fifths, .lap-eight-tenths {
     width: 80%;
   }
@@ -3507,12 +3527,12 @@ label,
   /**
   * Sixths
   */
-  /* line 53, inuit.css/generic/_widths.scss */
+  /* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-sixth, .lap-two-twelfths {
     width: 16.666%;
   }
 
-  /* line 57, inuit.css/generic/_widths.scss */
+  /* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-five-sixths, .lap-ten-twelfths {
     width: 83.333%;
   }
@@ -3520,22 +3540,22 @@ label,
   /**
   * Eighths
   */
-  /* line 63, inuit.css/generic/_widths.scss */
+  /* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-eighth {
     width: 12.5%;
   }
 
-  /* line 65, inuit.css/generic/_widths.scss */
+  /* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-three-eighths {
     width: 37.5%;
   }
 
-  /* line 67, inuit.css/generic/_widths.scss */
+  /* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-five-eighths {
     width: 62.5%;
   }
 
-  /* line 69, inuit.css/generic/_widths.scss */
+  /* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-seven-eighths {
     width: 87.5%;
   }
@@ -3543,22 +3563,22 @@ label,
   /**
   * Tenths
   */
-  /* line 75, inuit.css/generic/_widths.scss */
+  /* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-tenth {
     width: 10%;
   }
 
-  /* line 77, inuit.css/generic/_widths.scss */
+  /* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-three-tenths {
     width: 30%;
   }
 
-  /* line 81, inuit.css/generic/_widths.scss */
+  /* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-seven-tenths {
     width: 70%;
   }
 
-  /* line 83, inuit.css/generic/_widths.scss */
+  /* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-nine-tenths {
     width: 90%;
   }
@@ -3566,22 +3586,22 @@ label,
   /**
   * Twelfths
   */
-  /* line 89, inuit.css/generic/_widths.scss */
+  /* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-one-twelfth {
     width: 8.333%;
   }
 
-  /* line 93, inuit.css/generic/_widths.scss */
+  /* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-five-twelfths {
     width: 41.666%;
   }
 
-  /* line 95, inuit.css/generic/_widths.scss */
+  /* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-seven-twelfths {
     width: 58.333%;
   }
 
-  /* line 99, inuit.css/generic/_widths.scss */
+  /* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-eleven-twelfths {
     width: 91.666%;
   }
@@ -3590,7 +3610,7 @@ label,
   /**
   * Whole
   */
-  /* line 17, inuit.css/generic/_widths.scss */
+  /* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-whole {
     width: 100%;
   }
@@ -3598,7 +3618,7 @@ label,
   /**
   * Halves
   */
-  /* line 23, inuit.css/generic/_widths.scss */
+  /* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-half, .lap-and-up-two-quarters, .lap-and-up-three-sixths, .lap-and-up-four-eighths, .lap-and-up-five-tenths, .lap-and-up-six-twelfths {
     width: 50%;
   }
@@ -3606,12 +3626,12 @@ label,
   /**
   * Thirds
   */
-  /* line 29, inuit.css/generic/_widths.scss */
+  /* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-third, .lap-and-up-two-sixths, .lap-and-up-four-twelfths {
     width: 33.333%;
   }
 
-  /* line 30, inuit.css/generic/_widths.scss */
+  /* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-two-thirds, .lap-and-up-four-sixths, .lap-and-up-eight-twelfths {
     width: 66.666%;
   }
@@ -3619,12 +3639,12 @@ label,
   /**
   * Quarters
   */
-  /* line 36, inuit.css/generic/_widths.scss */
+  /* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-quarter, .lap-and-up-two-eighths, .lap-and-up-three-twelfths {
     width: 25%;
   }
 
-  /* line 38, inuit.css/generic/_widths.scss */
+  /* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-three-quarters, .lap-and-up-six-eighths, .lap-and-up-nine-twelfths {
     width: 75%;
   }
@@ -3632,22 +3652,22 @@ label,
   /**
   * Fifths
   */
-  /* line 44, inuit.css/generic/_widths.scss */
+  /* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-fifth, .lap-and-up-two-tenths {
     width: 20%;
   }
 
-  /* line 45, inuit.css/generic/_widths.scss */
+  /* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-two-fifths, .lap-and-up-four-tenths {
     width: 40%;
   }
 
-  /* line 46, inuit.css/generic/_widths.scss */
+  /* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-three-fifths, .lap-and-up-six-tenths {
     width: 60%;
   }
 
-  /* line 47, inuit.css/generic/_widths.scss */
+  /* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-four-fifths, .lap-and-up-eight-tenths {
     width: 80%;
   }
@@ -3655,12 +3675,12 @@ label,
   /**
   * Sixths
   */
-  /* line 53, inuit.css/generic/_widths.scss */
+  /* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-sixth, .lap-and-up-two-twelfths {
     width: 16.666%;
   }
 
-  /* line 57, inuit.css/generic/_widths.scss */
+  /* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-five-sixths, .lap-and-up-ten-twelfths {
     width: 83.333%;
   }
@@ -3668,22 +3688,22 @@ label,
   /**
   * Eighths
   */
-  /* line 63, inuit.css/generic/_widths.scss */
+  /* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-eighth {
     width: 12.5%;
   }
 
-  /* line 65, inuit.css/generic/_widths.scss */
+  /* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-three-eighths {
     width: 37.5%;
   }
 
-  /* line 67, inuit.css/generic/_widths.scss */
+  /* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-five-eighths {
     width: 62.5%;
   }
 
-  /* line 69, inuit.css/generic/_widths.scss */
+  /* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-eighths {
     width: 87.5%;
   }
@@ -3691,22 +3711,22 @@ label,
   /**
   * Tenths
   */
-  /* line 75, inuit.css/generic/_widths.scss */
+  /* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-tenth {
     width: 10%;
   }
 
-  /* line 77, inuit.css/generic/_widths.scss */
+  /* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-three-tenths {
     width: 30%;
   }
 
-  /* line 81, inuit.css/generic/_widths.scss */
+  /* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-tenths {
     width: 70%;
   }
 
-  /* line 83, inuit.css/generic/_widths.scss */
+  /* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-nine-tenths {
     width: 90%;
   }
@@ -3714,22 +3734,22 @@ label,
   /**
   * Twelfths
   */
-  /* line 89, inuit.css/generic/_widths.scss */
+  /* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-one-twelfth {
     width: 8.333%;
   }
 
-  /* line 93, inuit.css/generic/_widths.scss */
+  /* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-five-twelfths {
     width: 41.666%;
   }
 
-  /* line 95, inuit.css/generic/_widths.scss */
+  /* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-twelfths {
     width: 58.333%;
   }
 
-  /* line 99, inuit.css/generic/_widths.scss */
+  /* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .lap-and-up-eleven-twelfths {
     width: 91.666%;
   }
@@ -3738,7 +3758,7 @@ label,
   /**
   * Whole
   */
-  /* line 17, inuit.css/generic/_widths.scss */
+  /* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-whole {
     width: 100%;
   }
@@ -3746,7 +3766,7 @@ label,
   /**
   * Halves
   */
-  /* line 23, inuit.css/generic/_widths.scss */
+  /* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
     width: 50%;
   }
@@ -3754,12 +3774,12 @@ label,
   /**
   * Thirds
   */
-  /* line 29, inuit.css/generic/_widths.scss */
+  /* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
     width: 33.333%;
   }
 
-  /* line 30, inuit.css/generic/_widths.scss */
+  /* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
     width: 66.666%;
   }
@@ -3767,12 +3787,12 @@ label,
   /**
   * Quarters
   */
-  /* line 36, inuit.css/generic/_widths.scss */
+  /* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
     width: 25%;
   }
 
-  /* line 38, inuit.css/generic/_widths.scss */
+  /* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
     width: 75%;
   }
@@ -3780,22 +3800,22 @@ label,
   /**
   * Fifths
   */
-  /* line 44, inuit.css/generic/_widths.scss */
+  /* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-fifth, .portable-two-tenths {
     width: 20%;
   }
 
-  /* line 45, inuit.css/generic/_widths.scss */
+  /* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-two-fifths, .portable-four-tenths {
     width: 40%;
   }
 
-  /* line 46, inuit.css/generic/_widths.scss */
+  /* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-three-fifths, .portable-six-tenths {
     width: 60%;
   }
 
-  /* line 47, inuit.css/generic/_widths.scss */
+  /* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-four-fifths, .portable-eight-tenths {
     width: 80%;
   }
@@ -3803,12 +3823,12 @@ label,
   /**
   * Sixths
   */
-  /* line 53, inuit.css/generic/_widths.scss */
+  /* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-sixth, .portable-two-twelfths {
     width: 16.666%;
   }
 
-  /* line 57, inuit.css/generic/_widths.scss */
+  /* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-five-sixths, .portable-ten-twelfths {
     width: 83.333%;
   }
@@ -3816,22 +3836,22 @@ label,
   /**
   * Eighths
   */
-  /* line 63, inuit.css/generic/_widths.scss */
+  /* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-eighth {
     width: 12.5%;
   }
 
-  /* line 65, inuit.css/generic/_widths.scss */
+  /* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-three-eighths {
     width: 37.5%;
   }
 
-  /* line 67, inuit.css/generic/_widths.scss */
+  /* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-five-eighths {
     width: 62.5%;
   }
 
-  /* line 69, inuit.css/generic/_widths.scss */
+  /* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-seven-eighths {
     width: 87.5%;
   }
@@ -3839,22 +3859,22 @@ label,
   /**
   * Tenths
   */
-  /* line 75, inuit.css/generic/_widths.scss */
+  /* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-tenth {
     width: 10%;
   }
 
-  /* line 77, inuit.css/generic/_widths.scss */
+  /* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-three-tenths {
     width: 30%;
   }
 
-  /* line 81, inuit.css/generic/_widths.scss */
+  /* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-seven-tenths {
     width: 70%;
   }
 
-  /* line 83, inuit.css/generic/_widths.scss */
+  /* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-nine-tenths {
     width: 90%;
   }
@@ -3862,22 +3882,22 @@ label,
   /**
   * Twelfths
   */
-  /* line 89, inuit.css/generic/_widths.scss */
+  /* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-one-twelfth {
     width: 8.333%;
   }
 
-  /* line 93, inuit.css/generic/_widths.scss */
+  /* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-five-twelfths {
     width: 41.666%;
   }
 
-  /* line 95, inuit.css/generic/_widths.scss */
+  /* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-seven-twelfths {
     width: 58.333%;
   }
 
-  /* line 99, inuit.css/generic/_widths.scss */
+  /* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .portable-eleven-twelfths {
     width: 91.666%;
   }
@@ -3886,7 +3906,7 @@ label,
   /**
   * Whole
   */
-  /* line 17, inuit.css/generic/_widths.scss */
+  /* line 17, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-whole {
     width: 100%;
   }
@@ -3894,7 +3914,7 @@ label,
   /**
   * Halves
   */
-  /* line 23, inuit.css/generic/_widths.scss */
+  /* line 23, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
     width: 50%;
   }
@@ -3902,12 +3922,12 @@ label,
   /**
   * Thirds
   */
-  /* line 29, inuit.css/generic/_widths.scss */
+  /* line 29, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
     width: 33.333%;
   }
 
-  /* line 30, inuit.css/generic/_widths.scss */
+  /* line 30, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
     width: 66.666%;
   }
@@ -3915,12 +3935,12 @@ label,
   /**
   * Quarters
   */
-  /* line 36, inuit.css/generic/_widths.scss */
+  /* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
     width: 25%;
   }
 
-  /* line 38, inuit.css/generic/_widths.scss */
+  /* line 38, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
     width: 75%;
   }
@@ -3928,22 +3948,22 @@ label,
   /**
   * Fifths
   */
-  /* line 44, inuit.css/generic/_widths.scss */
+  /* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-fifth, .desk-two-tenths {
     width: 20%;
   }
 
-  /* line 45, inuit.css/generic/_widths.scss */
+  /* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-two-fifths, .desk-four-tenths {
     width: 40%;
   }
 
-  /* line 46, inuit.css/generic/_widths.scss */
+  /* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-three-fifths, .desk-six-tenths {
     width: 60%;
   }
 
-  /* line 47, inuit.css/generic/_widths.scss */
+  /* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-four-fifths, .desk-eight-tenths {
     width: 80%;
   }
@@ -3951,12 +3971,12 @@ label,
   /**
   * Sixths
   */
-  /* line 53, inuit.css/generic/_widths.scss */
+  /* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-sixth, .desk-two-twelfths {
     width: 16.666%;
   }
 
-  /* line 57, inuit.css/generic/_widths.scss */
+  /* line 57, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-five-sixths, .desk-ten-twelfths {
     width: 83.333%;
   }
@@ -3964,22 +3984,22 @@ label,
   /**
   * Eighths
   */
-  /* line 63, inuit.css/generic/_widths.scss */
+  /* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-eighth {
     width: 12.5%;
   }
 
-  /* line 65, inuit.css/generic/_widths.scss */
+  /* line 65, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-three-eighths {
     width: 37.5%;
   }
 
-  /* line 67, inuit.css/generic/_widths.scss */
+  /* line 67, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-five-eighths {
     width: 62.5%;
   }
 
-  /* line 69, inuit.css/generic/_widths.scss */
+  /* line 69, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-seven-eighths {
     width: 87.5%;
   }
@@ -3987,22 +4007,22 @@ label,
   /**
   * Tenths
   */
-  /* line 75, inuit.css/generic/_widths.scss */
+  /* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-tenth {
     width: 10%;
   }
 
-  /* line 77, inuit.css/generic/_widths.scss */
+  /* line 77, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-three-tenths {
     width: 30%;
   }
 
-  /* line 81, inuit.css/generic/_widths.scss */
+  /* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-seven-tenths {
     width: 70%;
   }
 
-  /* line 83, inuit.css/generic/_widths.scss */
+  /* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-nine-tenths {
     width: 90%;
   }
@@ -4010,22 +4030,22 @@ label,
   /**
   * Twelfths
   */
-  /* line 89, inuit.css/generic/_widths.scss */
+  /* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-one-twelfth {
     width: 8.333%;
   }
 
-  /* line 93, inuit.css/generic/_widths.scss */
+  /* line 93, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-five-twelfths {
     width: 41.666%;
   }
 
-  /* line 95, inuit.css/generic/_widths.scss */
+  /* line 95, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-seven-twelfths {
     width: 58.333%;
   }
 
-  /* line 99, inuit.css/generic/_widths.scss */
+  /* line 99, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_widths.scss */
   .desk-eleven-twelfths {
     width: 91.666%;
   }
@@ -4055,18 +4075,18 @@ label,
  * `.brand` is a quick and simple way to apply your brand face and/or color to
  * any element using a handy helper class.
  */
-/* line 8, inuit.css/generic/_brand.scss */
+/* line 8, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_brand.scss */
 .brand {
   font-family: "Open Sans", sans-serif!important;
   color: #539ff4!important;
 }
 
-/* line 12, inuit.css/generic/_brand.scss */
+/* line 12, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_brand.scss */
 .brand-face {
   font-family: "Open Sans", sans-serif!important;
 }
 
-/* line 16, inuit.css/generic/_brand.scss */
+/* line 16, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_brand.scss */
 .brand-color,
 .brand-colour {
   color: #539ff4!important;
@@ -4087,17 +4107,17 @@ label,
 /**
  * Add/remove floats
  */
-/* line 18, inuit.css/generic/_helper.scss */
+/* line 18, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .float--right {
   float: right!important;
 }
 
-/* line 19, inuit.css/generic/_helper.scss */
+/* line 19, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .float--left {
   float: left !important;
 }
 
-/* line 20, inuit.css/generic/_helper.scss */
+/* line 20, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .float--none {
   float: none !important;
 }
@@ -4105,17 +4125,17 @@ label,
 /**
  * Text alignment
  */
-/* line 26, inuit.css/generic/_helper.scss */
+/* line 26, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .text--left {
   text-align: left  !important;
 }
 
-/* line 27, inuit.css/generic/_helper.scss */
+/* line 27, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .text--center {
   text-align: center!important;
 }
 
-/* line 28, inuit.css/generic/_helper.scss */
+/* line 28, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .text--right {
   text-align: right !important;
 }
@@ -4123,17 +4143,17 @@ label,
 /**
  * Font weights
  */
-/* line 34, inuit.css/generic/_helper.scss */
+/* line 34, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .weight--light {
   font-weight: 300!important;
 }
 
-/* line 35, inuit.css/generic/_helper.scss */
+/* line 35, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .weight--normal {
   font-weight: 400!important;
 }
 
-/* line 36, inuit.css/generic/_helper.scss */
+/* line 36, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .weight--semibold {
   font-weight: 600!important;
 }
@@ -4141,112 +4161,112 @@ label,
 /**
  * Add/remove margins
  */
-/* line 42, inuit.css/generic/_helper.scss */
+/* line 42, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push {
   margin: 24px !important;
 }
 
-/* line 43, inuit.css/generic/_helper.scss */
+/* line 43, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--top {
   margin-top: 24px !important;
 }
 
-/* line 44, inuit.css/generic/_helper.scss */
+/* line 44, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--right {
   margin-right: 24px !important;
 }
 
-/* line 45, inuit.css/generic/_helper.scss */
+/* line 45, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--bottom {
   margin-bottom: 24px !important;
 }
 
-/* line 46, inuit.css/generic/_helper.scss */
+/* line 46, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--left {
   margin-left: 24px !important;
 }
 
-/* line 47, inuit.css/generic/_helper.scss */
+/* line 47, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--ends {
   margin-top: 24px !important;
   margin-bottom: 24px !important;
 }
 
-/* line 48, inuit.css/generic/_helper.scss */
+/* line 48, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push--sides {
   margin-right: 24px !important;
   margin-left: 24px !important;
 }
 
-/* line 50, inuit.css/generic/_helper.scss */
+/* line 50, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half {
   margin: 12px !important;
 }
 
-/* line 51, inuit.css/generic/_helper.scss */
+/* line 51, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--top {
   margin-top: 12px !important;
 }
 
-/* line 52, inuit.css/generic/_helper.scss */
+/* line 52, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--right {
   margin-right: 12px !important;
 }
 
-/* line 53, inuit.css/generic/_helper.scss */
+/* line 53, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--bottom {
   margin-bottom: 12px !important;
 }
 
-/* line 54, inuit.css/generic/_helper.scss */
+/* line 54, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--left {
   margin-left: 12px !important;
 }
 
-/* line 55, inuit.css/generic/_helper.scss */
+/* line 55, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--ends {
   margin-top: 12px !important;
   margin-bottom: 12px !important;
 }
 
-/* line 56, inuit.css/generic/_helper.scss */
+/* line 56, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .push-half--sides {
   margin-right: 12px !important;
   margin-left: 12px !important;
 }
 
-/* line 58, inuit.css/generic/_helper.scss */
+/* line 58, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush {
   margin: 0!important;
 }
 
-/* line 59, inuit.css/generic/_helper.scss */
+/* line 59, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--top {
   margin-top: 0!important;
 }
 
-/* line 60, inuit.css/generic/_helper.scss */
+/* line 60, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--right {
   margin-right: 0!important;
 }
 
-/* line 61, inuit.css/generic/_helper.scss */
+/* line 61, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--bottom {
   margin-bottom: 0!important;
 }
 
-/* line 62, inuit.css/generic/_helper.scss */
+/* line 62, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--left {
   margin-left: 0!important;
 }
 
-/* line 63, inuit.css/generic/_helper.scss */
+/* line 63, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--ends {
   margin-top: 0!important;
   margin-bottom: 0!important;
 }
 
-/* line 64, inuit.css/generic/_helper.scss */
+/* line 64, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .flush--sides {
   margin-right: 0!important;
   margin-left: 0!important;
@@ -4255,112 +4275,112 @@ label,
 /**
  * Add/remove paddings
  */
-/* line 70, inuit.css/generic/_helper.scss */
+/* line 70, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft {
   padding: 24px !important;
 }
 
-/* line 71, inuit.css/generic/_helper.scss */
+/* line 71, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--top {
   padding-top: 24px !important;
 }
 
-/* line 72, inuit.css/generic/_helper.scss */
+/* line 72, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--right {
   padding-right: 24px !important;
 }
 
-/* line 73, inuit.css/generic/_helper.scss */
+/* line 73, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--bottom {
   padding-bottom: 24px !important;
 }
 
-/* line 74, inuit.css/generic/_helper.scss */
+/* line 74, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--left {
   padding-left: 24px !important;
 }
 
-/* line 75, inuit.css/generic/_helper.scss */
+/* line 75, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--ends {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
 
-/* line 76, inuit.css/generic/_helper.scss */
+/* line 76, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft--sides {
   padding-right: 24px !important;
   padding-left: 24px !important;
 }
 
-/* line 78, inuit.css/generic/_helper.scss */
+/* line 78, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half {
   padding: 12px !important;
 }
 
-/* line 79, inuit.css/generic/_helper.scss */
+/* line 79, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--top {
   padding-top: 12px !important;
 }
 
-/* line 80, inuit.css/generic/_helper.scss */
+/* line 80, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--right {
   padding-right: 12px !important;
 }
 
-/* line 81, inuit.css/generic/_helper.scss */
+/* line 81, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--bottom {
   padding-bottom: 12px !important;
 }
 
-/* line 82, inuit.css/generic/_helper.scss */
+/* line 82, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--left {
   padding-left: 12px !important;
 }
 
-/* line 83, inuit.css/generic/_helper.scss */
+/* line 83, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--ends {
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
 
-/* line 84, inuit.css/generic/_helper.scss */
+/* line 84, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .soft-half--sides {
   padding-right: 12px !important;
   padding-left: 12px !important;
 }
 
-/* line 86, inuit.css/generic/_helper.scss */
+/* line 86, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard {
   padding: 0!important;
 }
 
-/* line 87, inuit.css/generic/_helper.scss */
+/* line 87, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--top {
   padding-top: 0!important;
 }
 
-/* line 88, inuit.css/generic/_helper.scss */
+/* line 88, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--right {
   padding-right: 0!important;
 }
 
-/* line 89, inuit.css/generic/_helper.scss */
+/* line 89, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--bottom {
   padding-bottom: 0!important;
 }
 
-/* line 90, inuit.css/generic/_helper.scss */
+/* line 90, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--left {
   padding-left: 0!important;
 }
 
-/* line 91, inuit.css/generic/_helper.scss */
+/* line 91, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--ends {
   padding-top: 0!important;
   padding-bottom: 0!important;
 }
 
-/* line 92, inuit.css/generic/_helper.scss */
+/* line 92, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .hard--sides {
   padding-right: 0!important;
   padding-left: 0!important;
@@ -4369,12 +4389,12 @@ label,
 /**
  * Pull items full width of `.island` parents.
  */
-/* line 98, inuit.css/generic/_helper.scss */
+/* line 98, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .full-bleed {
   margin-right: -24px !important;
   margin-left: -24px !important;
 }
-/* line 102, inuit.css/generic/_helper.scss */
+/* line 102, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .islet .full-bleed {
   margin-right: -12px !important;
   margin-left: -12px !important;
@@ -4384,7 +4404,7 @@ label,
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-/* line 113, inuit.css/generic/_helper.scss */
+/* line 113, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .informative {
   cursor: help!important;
 }
@@ -4392,7 +4412,7 @@ label,
 /**
  * Mute an object by reducing its opacity.
  */
-/* line 121, inuit.css/generic/_helper.scss */
+/* line 121, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .muted {
   opacity: 0.5!important;
   filter: alpha(opacity=50) !important;
@@ -4404,7 +4424,7 @@ label,
    <p class=proceed><a href=#>Read more...</a></p>
  *
  */
-/* line 133, inuit.css/generic/_helper.scss */
+/* line 133, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .proceed {
   text-align: right!important;
 }
@@ -4415,7 +4435,7 @@ label,
    <a href=# class=go>Read more</a>
  *
  */
-/* line 144, inuit.css/generic/_helper.scss */
+/* line 144, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .go:after {
   content: "\00A0" "\00BB"!important;
 }
@@ -4423,7 +4443,7 @@ label,
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-/* line 152, inuit.css/generic/_helper.scss */
+/* line 152, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .caps {
   text-transform: uppercase!important;
 }
@@ -4432,7 +4452,7 @@ label,
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-/* line 172, inuit.css/generic/_helper.scss */
+/* line 172, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
 .accessibility,
 .visuallyhidden {
   border: 0!important;
@@ -4446,7 +4466,7 @@ label,
 }
 
 @media only screen and (max-width: 639px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--palm,
   .visuallyhidden--palm {
     border: 0!important;
@@ -4460,7 +4480,7 @@ label,
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 859px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--lap,
   .visuallyhidden--lap {
     border: 0!important;
@@ -4474,7 +4494,7 @@ label,
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
     border: 0!important;
@@ -4488,7 +4508,7 @@ label,
   }
 }
 @media only screen and (max-width: 859px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--portable,
   .visuallyhidden--portable {
     border: 0!important;
@@ -4502,7 +4522,7 @@ label,
   }
 }
 @media only screen and (min-width: 860px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--desk,
   .visuallyhidden--desk {
     border: 0!important;
@@ -4516,7 +4536,7 @@ label,
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 179, inuit.css/generic/_helper.scss */
+  /* line 179, C:/htdocs/wordpress-test/public/wp-content/themes/chocolate_two/css/inuit.css/generic/_helper.scss */
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
     border: 0!important;

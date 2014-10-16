@@ -32,7 +32,7 @@ Template Name: Home Page
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 		?>
 
-		<article <?php post_class('grid__item desk-one-third post-tile'); ?> <?php if ( 'project' == get_post_type() ) : echo 'class="project" '; endif ?>>
+		<article <?php post_class('grid__item desk-one-third post-tile'); ?> <?php // if ( 'project' == get_post_type() ) : echo 'class="project" '; endif ?>>
 
 			<div class="container tile-content">
 
@@ -40,8 +40,12 @@ Template Name: Home Page
 
 				<header>
 					<div class="post-thumb">	
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">							
-							<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />							
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php if( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail('post-thumb'); ?>
+							<?php else : ?>							
+							<img src="<?php bloginfo('template_directory'); ?>/img/no-thumb.png" />	
+							<?php endif; ?>						
 						</a>
 					</div>
 					<h1 class="equal-title">
